@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css">
+    <script src="main.js"></script>
+
+    <style>
+        .overlay{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container1">
+                <nav class="desk">
+        
+                    <button class="menu-toggle" onclick="showUL()">
+                            <span class="stripe"></span>
+                            <span class="stripe"></span>
+                            <span class="stripe"></span>
+                    </button>
+        
+        
+                    <ul>
+                        <li class="active_page"><a href=""></a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="coffee.html">coffee</a></li>
+                        <li><a href="tea.html">Tea</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="directions.html">Locations</a></li>
+                        
+                        
+                    
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="img-container" id="Coffee" style="background-image: url(../pictures/farm.jpg)" title="Coffee" alt="Coffee">
+                <div> </div>
+                <div class="overlay"></div>
+                
+                </div>
+
+<div class="superdiv">
+<div class="productinfo">
+
+<h1>Rwanda Zirikana</h1>
+<h2>Rwanda</h2>
+<span class="priceinfo">$19.00</span>
+
+</div>
+
+<div class="flavors">
+
+        <p>Flavors: Mandrian Orange | Brown Sugar</p>
+    
+    </div>
+
+    <label for="Size">Select Coffee Size</label>
+    <select id="Size" name="areaofhabitation" class="form-input">
+        <option value="LA">12 oz</option>
+        <option value="SM">5 lb</option>
+    </select>
+
+    <label for="type">Coffee Type</label>
+    <select id="type" name="typeofcoffee" class="form-input">
+        <option value="Turkish">Turkish grind</option>
+        <option value="Espresso">Espresso</option>
+    </select>
+
+    <input type="submit" value="Add to Cart" class="submitbutton" id="cart">
+
+
+
+</div>
+</body>
+</html>
