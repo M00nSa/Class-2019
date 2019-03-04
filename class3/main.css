@@ -1,25 +1,90 @@
+body {
+    background-color: #C5C3C6;
+}
+
 .container {
-    background-color: lightcyan;
+    background-color: #C5C3C6;
 
 }
 
 .red {
-    background-color: lightcoral;
+    background-color: white;
+    background-image: url(pictures/1.jpg);
 }
 
+.red, .green, .blue, .cyan, .gray {
+    background-position: center;
+    background-size: cover;
+}
 .green {
     background-color: mediumpurple;
+    background-image: url(pictures/5.jpg);
 }
 
 .blue {
     background-color: mediumseagreen;
+    background-image: url(pictures/3.jpg);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.blue p {
+    position: absolute;
+    top: -26px;
+    left: 185px;
+    transform: rotate(35deg);
+    font-size: 41px;
+    color: #FE4A49;
+    border: 1px solid;
+    border-radius: 185px;
+    text-align: center;
+    padding: 5px;
+    right: 10px;
+    
+    
+}
+
+
+.blue p:hover {
+    color: red;  
+}
+
+.yellow {
+    background-color: #BAA898;
+    
+}
+
+.yellow p::first-letter {
+
+}
+
+.yellow p {
+    line-height: 1.8;
+    letter-spacing: 0.8px;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+.cyan {
+    background-color: turquoise;
+    background-image: url(pictures/2.jpg);
+}
+.gray {
+    background-color: lightslategray;
+    background-image: url(pictures/6.jpeg);
 }
 
 .floater-section {
     float: left;
     width: 100%;
-    min-height: 200px;
+    min-height: 270px;
     margin-bottom: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
 
 }
 .clearfix {
@@ -28,7 +93,7 @@
 
 .navbar {
     width: 100%;
-    background-color: white;
+    background-color:#2C2C54;
     height: 50px;
     position: fixed;
     top: 0px;
@@ -45,6 +110,7 @@
     padding-left: 3px;
     visibility: hidden;
     display: inline;
+    min-height: 60px;
 }
 
 .navbar ul li {
@@ -56,7 +122,7 @@
 }
 
 .navbar ul li a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
 }
 
@@ -82,6 +148,15 @@
     position: absolute;
     border-bottom: 2px solid rgb(0, 0, 0);
     width: 21px;
+}
+
+.navbar::before {
+    content: " ";
+}
+
+.navbar::after {
+    clear: both;
+    content: " ";
 }
 
 /*************Small Screens**********************/
@@ -129,16 +204,7 @@
     }
 }
 
-.yellow {
-    background-color: goldenrod;
-}
 
-.cyan {
-    background-color: turquoise;
-}
-.gray {
-    background-color: lightslategray;
-}
 /***************Large Screens********/
 @media (min-width: 992px) {
     .large-width-25 {
