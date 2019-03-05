@@ -24,24 +24,8 @@ body {
 .blue {
     background-color: mediumseagreen;
     background-image: url(pictures/n3.png);
-   
 }
 
-.blue p {
-    position: absolute;
-    top: -26px;
-    left: 185px;
-    transform: rotate(35deg);
-    font-size: 41px;
-    color: #FE4A49;
-    border: 1px solid;
-    border-radius: 185px;
-    text-align: center;
-    padding: 5px;
-    right: 10px;
-    
-    
-}
 
 
 
@@ -79,6 +63,69 @@ body {
     background-color: lightslategray;
     background-image: url(pictures/n5.jpg);
 }
+
+.purple img {
+    height: 342px;
+}
+h1 {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.container h2 {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px 10px;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    margin-top: 5px;
+}
+.purple, 
+.orange,
+.pink,
+.darkblue {
+    background-color: white;
+}
+.purple p, 
+.orange p,
+.pink p,
+.darkblue p {
+    padding: 0px 10px;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.purple p {
+    margin-bottom: 35px;  
+}
+.pink img, 
+.orange img {
+    height: 200px;
+    width: 100%;
+}
+
+.darkblue img{
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.container .pink, .orange {
+min-height: 200px;
+}
+.container .orange {
+    min-height: 200px;
+    }
+
+.container .darkblue {
+    min-height: 351px;
+}
+
+
+
 
 .floater-section {
     float: left;
@@ -224,6 +271,31 @@ body {
     .gray {
         min-height: 300px;
     }
+
+    .purple {
+        background-image: url(pictures/n6\ copy.jpg);
+        background-size: cover;
+    }
+
+    .container .purple {
+        min-height: 100px;
+    }
+    .purple img {
+        visibility: hidden;
+    }
+
+    .purple p {
+    visibility: hidden;
+    }
+    .purple h2{
+        width: 300px;
+        padding-left: 442px;
+    }
+    .textdiv {
+    display: inline;
+    }
+
+    
 }
 
 
