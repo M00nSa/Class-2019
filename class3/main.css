@@ -40,7 +40,7 @@ body {
 .container .cyan {
     min-height: 200px;
 }
-.container .gray {
+.container .gray  {
     min-height: 200px;
 }
 
@@ -178,7 +178,7 @@ min-height: 200px;
 }
 
 .navbar ul li:hover {
-    border: 1px solid rgb(0, 0, 0);
+    font-size: 110%;
 }
 
 .menu-toggle {
@@ -294,7 +294,7 @@ min-height: 200px;
     .textdiv {
     display: inline;
     }
-
+    
     
 }
 
