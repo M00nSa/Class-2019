@@ -183,6 +183,8 @@ min-height: 200px;
     width: 40px;
     margin: 10px;
     visibility: visible;
+    background: transparent;
+    border: transparent;
    
 }
 .stripe {
