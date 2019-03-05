@@ -9,7 +9,7 @@ body {
 
 .red {
     background-color: white;
-    background-image: url(pictures/1.jpg);
+    background-image: url(pictures/n1.png);
 }
 
 .red, .green, .blue, .cyan, .gray {
@@ -18,16 +18,13 @@ body {
 }
 .green {
     background-color: mediumpurple;
-    background-image: url(pictures/5.jpg);
+    background-image: url(pictures/n2.png);
 }
 
 .blue {
     background-color: mediumseagreen;
-    background-image: url(pictures/3.jpg);
-    position: relative;
-    top: 0px;
-    left: 0px;
-    opacity: 0.5;
+    background-image: url(pictures/n3.png);
+   
 }
 
 .blue p {
@@ -47,43 +44,49 @@ body {
 }
 
 
-.blue p:hover {
-    color: red;  
-}
 
 .yellow {
     background-color: #BAA898;
-    
+    min-height: 200px;
 }
 
-.yellow p::first-letter {
-
+.container .yellow {
+    min-height: 200px;
 }
+.container .cyan {
+    min-height: 200px;
+}
+.container .gray {
+    min-height: 200px;
+}
+
 
 .yellow p {
     line-height: 1.8;
     letter-spacing: 0.8px;
     padding: 10px;
     margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
     
 }
 
 .cyan {
     background-color: turquoise;
-    background-image: url(pictures/2.jpg);
+    background-image: url(pictures/n4.JPG);
 }
 .gray {
     background-color: lightslategray;
-    background-image: url(pictures/6.jpeg);
+    background-image: url(pictures/n5.jpg);
 }
 
 .floater-section {
     float: left;
     width: 100%;
-    min-height: 270px;
+    min-height: 552px;
     margin-bottom: 20px;
     border-top: 2px solid;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid black;
 
 
 }
@@ -124,6 +127,7 @@ body {
 .navbar ul li a {
     color: white;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 .navbar ul li:hover {
@@ -146,7 +150,7 @@ body {
 .stripe::before {
     content: "";
     position: absolute;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid white;
     width: 21px;
 }
 
@@ -168,7 +172,7 @@ body {
         width: 33.333%;
     }
     .small-width-50 {
-        width: 50%;
+        width: 49.73%;
     }
     .small-width-100 {
         width: 100%;
@@ -183,10 +187,10 @@ body {
         width: 25%;
     }
     .medium-width-33 {
-        width: 33.333%;
+        width: 33.06%;
     }
     .medium-width-50 {
-        width: 50%;
+        width: 49.7%;
     }
     .medium-width-100 {
         width: 100%;
@@ -202,13 +206,31 @@ body {
     .menu-toggle {
         visibility: hidden;
     }
+
+    .blue p {
+        top: 8px;
+        left: 146px;
+        font-size: 34px;
+    }
+    .floater-section {
+        margin-left: 2px;
+        
+    }
+
+    .yellow {
+        min-height: 150px;
+    }
+    .cyan,
+    .gray {
+        min-height: 300px;
+    }
 }
 
 
 /***************Large Screens********/
 @media (min-width: 992px) {
     .large-width-25 {
-        width: 25%;
+        width: 24.75%;
     }
     .large-width-33 {
         width: 33.333%;
@@ -218,5 +240,20 @@ body {
     }
     .large-width-100 {
         width: 100%;
+    }
+
+    .yellow p {
+        line-height: 1.8;
+        padding: 10px;
+        margin-top: 20px;
+    }
+   
+    .cyan,
+    .gray {
+        min-height: 438px;
+    }
+
+    .yellow {
+        min-height: 552px;
     }
 }
