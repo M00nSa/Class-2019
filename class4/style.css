@@ -1,0 +1,31 @@
+.content {
+    margin: 0px 10px;
+    min-height: 638px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+
+.content .img-container {
+    min-height: 390px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content .abs-pos {
+    position: absolute;
+}
+
+#BossBaBy {
+    top: 30px;
+}
+
+#Bosstitle {
+    top: 200px;
+    right: 30px;
+    color: whitesmoke;
+    text-shadow: 1px 0px 4px #070304;
+
+}
