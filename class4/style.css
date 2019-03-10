@@ -1,14 +1,136 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    border-bottom: 1px solid grey;
+}
+
+
+.navbar ul, .bio ul {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 3px;
+}
+
+.navbar ul {
+    height: 60px;
+    min-height: 60px;
+}
+
+ul {
+    display: none;
+}
+
+.bio ul {
+    height: 46px;
+}
+
+
+.navbar ul li,
+.bio ul li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.bio ul li {
+    font-weight: bolder;
+}
+
+.navbar ul li a,
+.bio ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.bio h1 {
+    font-size: 27px;
+}
+
+.bio h2 {
+    font-size: 18px;
+}
+
+.navbar ul li:hover {
+    font-size: 110%;
+}
+
+.menu-toggle {
+    width: 40px;
+    margin: 10px;
+   display: block;
+    background: transparent;
+    border: transparent;
+   float: right;
+}
+.stripe {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 7px;
+    width: 10px;
+    height: 1px;
+    
+}
+.stripe::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid black;
+    width: 21px;
+    
+}
+
+
 .content {
     margin: 0px 10px;
-    min-height: 638px;
-    border-bottom: 2px solid black;
+    min-height: 530px;
     position: relative;
 }
 
 
-.content .img-container {
-    min-height: 390px;
+h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
+
+h2 {
+    color: gray;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.text {
+    padding: 25px 15px;
+}
+
+.text p {
+    font-size: 14px;
+    letter-spacing: .40px;
+    font-family: sans-serif;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
 
 .content img {
     max-width: 100%;
@@ -28,4 +150,62 @@
     color: whitesmoke;
     text-shadow: 1px 0px 4px #070304;
 
+}
+
+
+.bio {
+    margin-top: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+
+
+.fix h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.bio h2 {
+    margin: 20px 0px 65px;
+}
+.bio p {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid gray;
+    padding: 60px 20px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.bio ul {
+    display: block;
+   padding-top: 364px;
+}
+
+.img-container {
+    min-height: 200px;
+}
+
+
+.hero-image {
+    background-image: url("pictures/7.jpg");
+    background-position: -659px -204px;
+    background-repeat: no-repeat;
+    background-color:#d2d1d6;
+}
+
+.fix {
+    position: fixed;
+    padding-top: 48px;
+    top: 0;
+    left: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 2;
 }

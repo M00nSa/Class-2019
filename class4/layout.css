@@ -66,7 +66,38 @@
     .medium-width-100 {
         width: 100%;
     }
+    .navbar .menu-toggle {
+        display: none;
+    }
+   
+    .bio p {
+        padding: 60px 125px;
+    }
 
+    #LastText {
+        text-align: center;
+        padding: 25px 191px
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    body .container {
+        margin-top: 105px;
+    }
+
+    .hero-image {
+        background-position: center;
+    }
+
+    .bio ul {
+        padding-top: 330px;
+    }
+
+    .fix h1 {
+        font-size: 100px;
+    }
 }
 
 .yellow {
@@ -96,5 +127,14 @@
     }
     .large-width-100 {
         width: 100%;
+    }
+
+    .bio p {
+        padding: 60px 182px;
+    }
+
+    .content #LastText {
+        text-align: left;
+        padding: 25px 15px;
     }
 }
