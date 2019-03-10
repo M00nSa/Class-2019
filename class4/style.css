@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 62px;
 }
 
 
@@ -45,7 +45,7 @@ li {
 
 .navbar ul li,
 .bio ul li {
-    width: 33.33%;
+    width: 25%;
     float: left;
     text-align: center;
     line-height: 62px;
@@ -62,10 +62,6 @@ li {
     text-decoration: none;
     font-family: sans-serif;
     font-size: 22px;
-}
-
-.navbar ul li a {
-    font-size: 30px;
 }
 
 .bio h1 {
@@ -108,7 +104,7 @@ li {
 .content {
     margin: 0px 10px;
     min-height: 530px;
-    position: relative;
+    
 }
 
 
@@ -179,8 +175,8 @@ h2 {
     margin: 20px 0px 65px;
 }
 .bio p {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid gray;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
     padding: 60px 20px;
     margin-top: 0px;
     letter-spacing: 1px;
@@ -217,3 +213,76 @@ h2 {
     z-index: 2;
 }
 
+#relative {
+    position: relative;
+}
+
+.min {
+    min-height: 0px;   
+}
+#absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+}
+
+#absolute h1{
+    font-size: 38px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+#absolute h2{
+    font-size: 10px;
+    color: black;
+    margin-top: 5px;
+    
+}
+
+#absolute a {
+text-decoration: none;
+}
+
+#position1, 
+#position2,
+#position3,
+#position4,
+#position5,
+#position6
+  {
+    position: absolute;
+    text-shadow: 1px 0px 4px #ffffff;
+    left: 0px;
+    
+}
+#position1 {
+top:413px;
+left: 0px;
+}
+#position2 {
+    top: 491px;
+    top: 739px;
+    left: 0px;
+}
+#position3 {
+    top: 1029px;
+    left: 0px;
+}
+
+.font-size h1 {
+    font-size: 30px;
+}
+#position4 {
+    top: 1311px;
+    left: 0px; 
+}
+#position5 {
+    top: 1687px;
+    left: 0px; 
+}
+
+#position6 {
+    top: 2040px;
+    left: 0px; 
+}
