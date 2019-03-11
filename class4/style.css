@@ -112,14 +112,14 @@ width: 25%;
 
 
 h1 {
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 1px;
     font-family: sans-serif;
 }
 
 h2 {
     color: gray;
-    font-size: 15px;
+    font-size: 18px;
     font-family: sans-serif;
     letter-spacing: 1px;
     margin-top: 15px;
@@ -130,10 +130,10 @@ h2 {
 }
 
 .text p {
-    font-size: 14px;
-    letter-spacing: .40px;
+    font-size: 18px;
+    letter-spacing: 1px;
     font-family: sans-serif;
-    line-height: 26px;
+    line-height: 36px;
     margin-top: 30px;
 }
 
@@ -183,9 +183,9 @@ h2 {
     padding: 60px 20px;
     margin-top: 0px;
     letter-spacing: 1px;
-    line-height: 40px;
+    line-height: 68px;
     font-family: sans-serif;
-    font-size: 19px;
+    font-size: 26px;
     font-weight: 500;
 }
 
@@ -291,4 +291,16 @@ text-decoration: none;
     top: 330px;
 }
 
+.text p::first-letter {
+    font-size: 32px;
+}
 
+.about p::first-letter {
+    font-size: 70px;
+}
+.text p::first-letter,
+.about p::first-letter {
+line-height: 40px;
+letter-spacing: 5px;
+font-family: cursive;
+}
