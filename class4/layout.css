@@ -71,7 +71,7 @@
     }
    
     .bio p {
-        padding: 60px 125px;
+        padding: 121px 125px;
     }
 
     #LastText {
@@ -140,6 +140,9 @@
 .content #absolute h2 {
     font-size: 22px;
 }
+.content {
+    margin: 0px;
+}
 }
 
 
@@ -163,7 +166,7 @@
     }
 
     .bio p {
-        padding: 60px 182px;
+        padding: 121px 182px;
     }
 
     .content #LastText {
