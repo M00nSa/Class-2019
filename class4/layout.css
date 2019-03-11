@@ -99,13 +99,47 @@
         font-size: 100px;
     }
 
-    #absolute h1{
+    .Ab h1{
         font-size: 67px;
         margin-bottom: 10px;
     }
-    #absolute h2{
+    .Ab h2{
         font-size: 20px;
     }
+
+    
+.mar0 {
+    margin: 0px;
+}
+
+.content #position1 {
+    top:167px;
+}
+.content #position2 {
+    top: 386px;
+}
+.content #position3 {
+    top: 267px;
+}
+.content #position4 {
+    top: 160px;
+}
+.content #position5 {
+    top: 146px;
+}
+.content #position6 {
+    top: 905px;
+}
+.content .font-size h1 {
+    font-size: 36px;
+}
+
+.content #absolute h1 {
+    font-size: 86px;
+}
+.content #absolute h2 {
+    font-size: 22px;
+}
 }
 
 
@@ -135,5 +169,8 @@
     .content #LastText {
         text-align: left;
         padding: 25px 15px;
+    }
+    .hero-image {
+        background-position: initial;
     }
 }

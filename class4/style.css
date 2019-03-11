@@ -45,15 +45,18 @@ li {
 
 .navbar ul li,
 .bio ul li {
-    width: 25%;
     float: left;
     text-align: center;
     line-height: 62px;
 
 }
+.navbar ul li {
+width: 25%;
+}
 
 .bio ul li {
     font-weight: bolder;
+    width: 33.33%;
 }
 
 .navbar ul li a,
@@ -256,33 +259,36 @@ text-decoration: none;
     left: 0px;
     
 }
-#position1 {
-top:413px;
-left: 0px;
-}
-#position2 {
-    top: 491px;
-    top: 739px;
-    left: 0px;
-}
-#position3 {
-    top: 1029px;
-    left: 0px;
-}
 
 .font-size h1 {
-    font-size: 30px;
+    font-size: 25px;
 }
-#position4 {
-    top: 1311px;
-    left: 0px; 
-}
-#position5 {
-    top: 1687px;
-    left: 0px; 
+.font-size h1, 
+.font-size h2{
+    margin: 0px;
+}  
+
+.mar0 {
+    position: relative;
 }
 
-#position6 {
-    top: 2040px;
-    left: 0px; 
+#position1 {
+    top:133px;
 }
+#position2 {
+    top: 317px;
+}
+#position3 {
+    top: 218px;
+}
+#position4 {
+    top: 130px;
+}
+#position5 {
+    top: 112px;
+}
+#position6 {
+    top: 330px;
+}
+
+
