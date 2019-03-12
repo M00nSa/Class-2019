@@ -179,4 +179,39 @@
     .hero-image {
         background-position: initial;
     }
+
+    .content #position1 {
+        top:230px;
+    }
+    .content #position2 {
+        top: 547px
+    }
+    .content #position3 {
+        top: 345px;
+    }
+    .content #position4 {
+        top: 230px;
+    }
+    .content #position5 {
+        top: 334px;
+    }
+    .content #position6 {
+        top: 930px;
+    }
+    .content .font-size h1 {
+        font-size: 36px;
+    }
+    
+    .content #absolute h1 {
+        font-size: 86px;
+    }
+    .content #absolute h2 {
+        font-size: 22px;
+    }
+    .content {
+        margin: 0px;
+    }
+    .mar0 .content {
+        margin: 0px;
+    }
 }
