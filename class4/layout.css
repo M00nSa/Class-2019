@@ -71,7 +71,7 @@
     }
    
     .bio p {
-        padding: 121px 40px;
+        padding: 121px 40px 0px;
     }
 
     #LastText {
@@ -87,12 +87,10 @@
         margin-top: 105px;
     }
 
-    .bio ul {
-        padding: 818px 0px 15px;
-    }
+    
 
     .fix h1 {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     .Ab h1{
@@ -146,9 +144,11 @@
 .bio p {
     line-height: 67px;
 }
+
 .bio ul {
-    padding: 600px 0px 15px;
+    width: 558px;
 }
+
 
 }
 
@@ -220,15 +220,13 @@
     }
 
     .bio p {
-        padding: 121px 50px;
-        font-size: 26px;
+        padding: 121px 50px 0px;
+        
     }
     .bio ul li a {
         font-size: 26px;
     }
-    .bio p {
-        line-height: 86px;
-    }
+    
     .about p {
         text-indent: 40px;
     }
@@ -239,6 +237,9 @@
 
     #Text-m p {
         margin-top: 38px;
+    }
+    .about p {
+        margin-right: 343px;
     }
    
 }
