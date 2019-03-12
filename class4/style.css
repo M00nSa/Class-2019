@@ -112,7 +112,7 @@ width: 25%;
 
 
 h1 {
-    font-size: 22px;
+    font-size: 19px;
     letter-spacing: 1px;
     font-family: sans-serif;
 }
@@ -304,4 +304,8 @@ text-decoration: none;
 line-height: 40px;
 letter-spacing: 5px;
 font-family: cursive;
+}
+
+.right {
+    float: right;
 }

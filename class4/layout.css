@@ -116,7 +116,7 @@
     top:167px;
 }
 .content #position2 {
-    top: 386px;
+    top: 411px
 }
 .content #position3 {
     top: 267px;
@@ -125,10 +125,10 @@
     top: 160px;
 }
 .content #position5 {
-    top: 146px;
+    top: 253px;
 }
 .content #position6 {
-    top: 905px;
+    top: 768px;
 }
 .content .font-size h1 {
     font-size: 36px;
@@ -141,6 +141,9 @@
     font-size: 22px;
 }
 .content {
+    margin: 0px;
+}
+.mar0 .content {
     margin: 0px;
 }
 }
