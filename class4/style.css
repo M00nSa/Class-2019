@@ -1,5 +1,8 @@
 body {
     margin: 0px;
+    background-image: url(../pictures/7copy.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -213,7 +216,7 @@ h2 {
 
 .bio ul {
     display: block;
-    padding-top: 400px;
+    padding-top: 507px;
 }
 
 .img-container {
