@@ -7,7 +7,7 @@
     width: 500px;
     background-color: #9E9E9E;
     padding: 10px;
-    height: 3950px;
+    height: 6244px;
  }
 .red {
     background-color:#EBBC15;
@@ -47,8 +47,12 @@
     margin: 0 auto;
 }
 
+#vertCenter1 {
+    height: 717px;
+}
+
 #vertHorizCenter2 {
-    height: 600px;
+    height: 750px;
 }
 
 
@@ -82,22 +86,25 @@
     height: 180px;
     
     background-color: #5f5e63;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     color: white;
     letter-spacing: 1.7px;
+    font-weight: 400;
 }
 
 #vertHorizCenter2 p {
     position: absolute;
-    top: 50%;
-    left: 50%;
- font-size: 17px;
-    transform: translate(-50%, -50%);
-letter-spacing: .50px;
+    top: 30%;
+    left: 30%;
+    font-size: 25px;
+    transform: translate(-25%, -25%);
+    letter-spacing: 1.70px;
     margin: 0px;
-    text-align: center;
     color: white;
+    line-height: 32px;
+    padding: 0px 0px 98px 0px;
+    font-weight: 100;
 }
 
 .center,
@@ -110,10 +117,10 @@ letter-spacing: .50px;
 }
 
 .BG {
-    height: 380px;
+    height: 747px;
 }
 #vertCenter1 img {
-    width: 250px;
+    width: 458px;
     padding: 10px;
 }
 
@@ -133,18 +140,18 @@ letter-spacing: .50px;
 }
 
 .flex {
-    background: black;
+    background: #5f5e63;
     color: white;
-    border: 10px solid #FFC107;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 350px;
+    height: 527px;
     resize: vertical;
     overflow: auto;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1.2px;
-    line-height: 28px;
+    line-height: 32px;
+    padding: 40px;
   }
 
   .flex p {
@@ -178,7 +185,7 @@ letter-spacing: .50px;
    /* Centering block with known width and height Both horizontally and vertically */
 .maindiv {
     position: relative;
-    background: #3F51B5;
+    background: black;
     height: 200px;
     width: 500px;
     resize: both;
@@ -219,3 +226,4 @@ letter-spacing: .50px;
     height: 100px;
     object-fit: cover;
 }
+

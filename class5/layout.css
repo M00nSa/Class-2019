@@ -102,6 +102,30 @@
     .med-show {
         display: initial;
     }
+    .floater-section #vertCenter1 img {
+        width: 250px;
+    }
+    .Gaga img {
+        height: 358px;
+    }
+    .container .BG {
+        height: 400px;
+    }
+    .floater-section #vertCenter1 {
+        height: 400px;
+    }
+
+    .floater-section #vertHorizCenter2 p {
+        line-height: 24px;
+        font-size: 20px;
+
+    }
+    .floater-section #vertHorizCenter2 {
+        height: 952px;
+    }
+    body .container {
+        height: 4550px;
+    }
 }
 
 /*************LARGE SCREENS*******************/
