@@ -1,10 +1,12 @@
-  
+ body {
+     margin: 0px;
+ } 
 .red {
-    background-color: lightcoral;
+    background-color:#EBBC15;
 }
 
 .green {
-    background-color: lightgreen;
+    background-color: #5F5E63;
 }
 
 .blue {
@@ -16,13 +18,16 @@
 }
 
 .cyan {
-    background-color: darkturquoise;
+    background-color: #270F09;
 }
 
 .purple {
     background-color: plum;
 }
 
+.bloodred {
+    background-color: #491400;
+}
 .content {
     position: relative;
 }
@@ -30,26 +35,27 @@
 #vertCenter1,
 #vertCenter2,
 #vertHorizCenter1 {
-    height: 200px;
+    height: 300px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #vertHorizCenter2 {
-    height: 400px;
+    height: 600px;
 }
 
-#vertCenter1 img {
-    position: absolute;
-    height: 100px; /* because we need to calculate the margin */
-    margin-top: -50px;
-    top: 50%;
-    display: block;
-}
+
 
 #Lorem1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin: 0px; /* MARGINS affect the centering in this method! */
+    padding: 20px;
+    font-size: 32px;
+    color: white;
+    letter-spacing: .80px;
+    text-align: center;
 }
 
 #vertHorizCenter1 h2 {
@@ -59,12 +65,12 @@
     padding: 30px;
 
     /* Half the width accounting for padding and border */
-    margin-left: -159px;
-    width: 258px;
+    margin-left: -233px;
+    width: 414px;
     
     /* Half the height accounting for padding and border */
     margin-top: -44px;
-    height: 28px;
+    height: 56px;
     
     background-color: beige;
 }
@@ -73,9 +79,33 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
+ font-size: 17px;
     transform: translate(-50%, -50%);
-
+letter-spacing: .50px;
     margin: 0px;
-    text-align: justify;
+    text-align: center;
+    color: white;
+}
+
+.container .center {
+    text-align: center; 
+    height: 800px;
+    position: relative;
+    resize: vertical;
+    overflow: auto;
+}
+
+#vertCenter1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    resize: vertical;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#vertCenter3 {
+    height: 300px;
+    width: 100%;
 }

@@ -60,6 +60,9 @@
     .small-show {
         display: initial;
     }
+    #Lorem {
+        margin-top: 20px;
+    }
 }
 
 /*************MEDIUM SCREENS*******************/
