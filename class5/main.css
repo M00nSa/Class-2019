@@ -1,6 +1,14 @@
  body {
      margin: 0px;
  } 
+
+ .container {
+    margin: 0 auto;
+    width: 500px;
+    background-color: #9E9E9E;
+    padding: 10px;
+    height: 3950px;
+ }
 .red {
     background-color:#EBBC15;
 }
@@ -36,7 +44,6 @@
 #vertCenter2,
 #vertHorizCenter1 {
     height: 300px;
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -52,10 +59,12 @@
     transform: translateY(-50%);
     margin: 0px; /* MARGINS affect the centering in this method! */
     padding: 20px;
-    font-size: 32px;
+    font-size: 35px;
+    line-height: 50px;
     color: white;
-    letter-spacing: .80px;
+    letter-spacing: 1.70px;
     text-align: center;
+    font-weight: 400;
 }
 
 #vertHorizCenter1 h2 {
@@ -65,14 +74,18 @@
     padding: 30px;
 
     /* Half the width accounting for padding and border */
-    margin-left: -233px;
+    margin-left: -238px;
     width: 414px;
     
     /* Half the height accounting for padding and border */
-    margin-top: -44px;
-    height: 56px;
+    margin-top: -120px;
+    height: 180px;
     
-    background-color: beige;
+    background-color: #5f5e63;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.7px;
 }
 
 #vertHorizCenter2 p {
@@ -87,7 +100,8 @@ letter-spacing: .50px;
     color: white;
 }
 
-.container .center {
+.center,
+.BG {
     text-align: center; 
     height: 800px;
     position: relative;
@@ -95,17 +109,113 @@ letter-spacing: .50px;
     overflow: auto;
 }
 
-#vertCenter1 {
+.BG {
+    height: 380px;
+}
+#vertCenter1 img {
+    width: 250px;
+    padding: 10px;
+}
+
+#vertCenter1,
+#vertCenter {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     resize: vertical;
     overflow: auto;
     width: 100%;
-    height: 100%;
 }
 
 #vertCenter3 {
     height: 300px;
     width: 100%;
+}
+
+.flex {
+    background: black;
+    color: white;
+    border: 10px solid #FFC107;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    resize: vertical;
+    overflow: auto;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    line-height: 28px;
+  }
+
+  .flex p {
+    margin: 0;
+    padding: 20px;
+    
+  }
+
+  
+  .parent {
+    background: white;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+    overflow: auto;
+
+  }
+
+  .parent .content {
+    background: black;
+    color: white;
+    padding: 20px;
+    resize: vertical;
+    overflow: auto;
+    text-align: center;
+  }
+
+   /* Centering block with known width and height Both horizontally and vertically */
+.maindiv {
+    position: relative;
+    background: #3F51B5;
+    height: 200px;
+    width: 500px;
+    resize: both;
+    overflow: auto;
+}
+
+.maindiv .content {
+    background: black;
+  color: white;
+  width: 200px;
+  height: 100px;
+  margin: -70px 0 0 -120px;  /*impo*/
+  position: absolute;
+  top: 50%;    /*impo*/
+  left: 50%; /*impo*/
+  padding: 20px;
+}
+
+/* Centering block with unknown width and height Both horizontally and vertically */
+
+
+
+.childdiv {
+    background: black;
+  color: white;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+  text-align: center;
+}
+
+.childdiv img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
 }
