@@ -7,7 +7,6 @@
     width: 500px;
     background-color: #9E9E9E;
     padding: 10px;
-    height: 6244px;
  }
 .red {
     background-color:#EBBC15;
@@ -55,7 +54,9 @@
     height: 750px;
 }
 
-
+#vertCenter img {
+    max-width: 100%;
+}
 
 #Lorem1 {
     position: absolute;
@@ -95,16 +96,12 @@
 
 #vertHorizCenter2 p {
     position: absolute;
-    top: 30%;
-    left: 30%;
     font-size: 25px;
-    transform: translate(-25%, -25%);
     letter-spacing: 1.70px;
-    margin: 0px;
     color: white;
     line-height: 32px;
-    padding: 0px 0px 98px 0px;
     font-weight: 100;
+    width: 100%;
 }
 
 .center,
@@ -121,7 +118,6 @@
 }
 #vertCenter1 img {
     width: 458px;
-    padding: 10px;
 }
 
 #vertCenter1,
@@ -235,3 +231,6 @@
     line-height: 70px;
 }
 
+.clearfix {
+    clear: both;
+}
