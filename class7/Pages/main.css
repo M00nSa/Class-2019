@@ -4,6 +4,7 @@ body {
 
 .container {
     margin: 50px auto;
+    width: 290px;
 }
 
 .navbar {
@@ -14,7 +15,7 @@ body {
     top: 0px;
     left: 0px;
     z-index: 6;
-    border-bottom: 1px solid grey;
+    
 }
 
 
@@ -52,8 +53,13 @@ width: 20%;
     
 }
 
+
+
 .navbar ul li a:hover {
     font-size: 110%;
+    border-bottom: 2px solid;
+    padding: 10px 0px;
+    width: 2px;
 }
 
 .menu-toggle {
@@ -146,4 +152,38 @@ width: 20%;
     font-family: sans-serif;
     font-size: 14px;
     font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.header1 h1 {
+    padding: 7px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.header1 {
+    padding: 71px 0px;
+    width: 200px;
+    margin: auto;
+}
+
+.header2 {
+    text-align: center;
+    padding: 20px 0px;
+}
+.header2 h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.Paragraph h3 {
+    text-align: center;
+    letter-spacing: 1px;
 }
