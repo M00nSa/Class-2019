@@ -1,0 +1,12 @@
+
+/* every picture will conform to the structure  */
+img {
+    max-width: 100%;
+   filter: hue-rotate(235deg);   /* Numbers from 0 to 360 */
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    background-color: hsl(235, 50%, 75%);
+}
