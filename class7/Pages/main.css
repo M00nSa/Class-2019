@@ -32,7 +32,7 @@ body {
 }
 
 
-ul {
+.navbar ul {
     display: none;
 }
 
@@ -87,9 +87,9 @@ width: 20%;
 }
 
 .content {
-    margin: 0px 10px;
-    min-height: 530px;
-    
+    min-height: 464px;
+    text-align: center;
+    padding: 10px;
 }
 
 .content img {
@@ -135,11 +135,32 @@ width: 20%;
     background-color: black;
     border: 2px solid rgb(75, 40, 40);
     font-size: 14px;
-    padding: 12px;
     color: white;
-    font-family: fantasy;
     width: 100px;
     height: 45px;
+}
+
+#Visit, 
+#Direction,
+#Sendmsg {
+    padding: 12px;
+    font-family: fantasy;
+}
+#Direction {
+    background-color: white;
+    border: 2px solid rgb(75, 40, 40);
+    font-size: 18px;
+    color: black;
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 75px;
+}
+
+#Sendmsg {
+    background-color: black;
+    color: white;
+    margin: 0px;
 }
 
 .hide {
@@ -161,18 +182,8 @@ width: 20%;
     text-align: center;
 }
 
-.header1 h1 {
-    padding: 7px;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    text-align: center;
-}
 
-.header1 {
-    padding: 71px 0px;
-    width: 200px;
-    margin: auto;
-}
+
 
 .header2 {
     text-align: center;
@@ -187,3 +198,104 @@ width: 20%;
     text-align: center;
     letter-spacing: 1px;
 }
+
+.address {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.tel {
+    text-align: center;
+}
+
+.address p {
+    line-height: 28px;
+    letter-spacing: 0.65px;
+}
+
+.address ul {
+    list-style: none;
+    padding: 0px;
+    
+}
+
+.height {
+    height: 470px;
+}
+
+
+
+
+.height .content {
+    padding: 0px;
+}
+
+.h1 h1,
+.header1 {
+    padding: 50px 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    letter-spacing: 5.5px;
+    font-family: fantasy;
+}
+
+.tel p,
+.main h2 {
+    color: #515151;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    color: #565656;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-top: 43px;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+.main .content {
+    min-height: 364px;
+}
+
+.form-input {
+    display: block;
+    width: 270px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.content label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  
+}
+
+.content form {
+    text-align: left;
+}
+
+.content label {
+    padding-bottom: 10px;
+}
+
+#Message {
+height: 150px;
+}
+
+#Contact-img {
+    min-height: 200px;  
+}
+
+  .bcontainer {
+    padding-top: 37px;
+  }
