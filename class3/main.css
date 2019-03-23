@@ -5,16 +5,9 @@ body {
 
 .container1 {
     background-color: #C5C3C6;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
-.img-cont {
-    float: left;
-}
-
-.img-cont img {
-    width: 80px;
-}
 
 .red img, .green img, .blue img, .cyan img, .gray img {
     width: 100%;
