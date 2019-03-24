@@ -1,3 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Simonetta:400,900');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+
 body {
     margin: 0px;
 }
@@ -254,6 +260,8 @@ width: 20%;
     margin-bottom: 50px;
 }
 
+
+
 .h1 h1 {
     line-height: 80px;
 }
@@ -371,3 +379,50 @@ color: white;
 .buttons {
     margin: 0 auto 40px;;
 }
+
+ #MP h3,
+ #MP h4,
+ #MP p{
+    text-align: left;
+}
+
+
+.background {
+    background-image: url("../Pictures/togo.jpg");
+    background-size: 66px;
+    background-position: bottom;
+    filter: opacity(30%);
+}
+
+.position h1{
+    position: absolute;
+    left: 4px;
+    top: 48px;
+    color:  #2A5E2A;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+}
+
+.position {
+    position: relative;
+}
+
+.text {
+    text-align: center;
+    border-top: 2px solid #2A5E2A;
+    border-bottom: 2px solid #2A5E2A;
+    margin: 0px 201px 50px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+
+.Font h3 {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+}
+
+.background {
+    height: 141px;
+}
+

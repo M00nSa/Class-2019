@@ -159,8 +159,9 @@ iframe {
     display: block;
 }
 
-.header1 {
-    height: 140px;
+.container .background {
+        height: 345px;
+    
 }
 
 .Paragraph p {
@@ -178,6 +179,23 @@ iframe {
 
 .buttons {
     width: 508px;
+}
+
+.background {
+    background-size: 191px;
+}
+.position h1 {
+    left: 15px;
+    top: 42px;
+    font-size: 59px;
+}
+
+.MN .header1 {
+    height: 124px;
+}
+
+.padding {
+    padding: 0px 0px 0px 20px;
 }
 
 }
@@ -244,4 +262,11 @@ iframe {
     .content h4 {
         font-size: 20px;
     }
+
+
+.position h1{
+    left: 85px;
+    top: 36px;
+    font-size: 72px;
+}
 }
