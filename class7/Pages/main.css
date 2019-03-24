@@ -48,12 +48,13 @@ width: 20%;
 
 .navbar ul li a {
     color: black;
-    text-decoration: none;
     font-family: sans-serif;
-    
 }
-
-
+.navbar ul li a,
+.floater a,
+.VisitButton a {
+    text-decoration: none;
+} 
 
 .navbar ul li a:hover {
     font-size: 110%;
@@ -138,8 +139,8 @@ width: 20%;
 }
 
 #Visit {
-    background-color: black;
-    border: 2px solid rgb(75, 40, 40);
+    background-color: #111D1B;
+    border: 2px solid #30281E;
     font-size: 14px;
     color: white;
     width: 100px;
@@ -245,12 +246,16 @@ width: 20%;
 .MH1 {
     padding: 25px 0px;
     text-align: center;
-    background-color: black;
+    background-color: #111D1B;
     color: white;
     letter-spacing: 5.5px;
     font-family: 'Quicksand', sans-serif;
     height: 80px;
     margin-bottom: 50px;
+}
+
+.h1 h1 {
+    line-height: 80px;
 }
 
 .tel p,
@@ -331,7 +336,7 @@ height: 150px;
     }
 
 .main h2 {
-    font-size: 34px;
+    font-size: 38px;
 }
 
 .supercontainer .floater-sec {
@@ -342,13 +347,27 @@ height: 150px;
 #FB,
 #CS,
 #HC {
-    border: 2px solid #564335;
+    border: 2px solid #111D1B;
     font-size: 18px;
-    color: #564335;
+    color: #111D1B;
     width: 194px;
     height: 64px;
     margin-top: 17px;
     margin-bottom: 75px;
     border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
 
+}
+
+.floater #CnT:hover,
+.floater #FB:hover,
+.floater #CS:hover,
+.floater #HC:hover {
+background-color: #564335;
+border-color: #564335;
+color: white;
+}
+
+.buttons {
+    margin: 0 auto 40px;;
 }

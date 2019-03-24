@@ -171,7 +171,14 @@ iframe {
     width: 150px;
     margin: 15px auto;
 }
+.floater {
+    float: left;
+    width: 254px;
+}
 
+.buttons {
+    width: 508px;
+}
 
 }
 
@@ -214,7 +221,7 @@ iframe {
     }
     .contentdiv img {
         top: 187px;
-        left: 319px;
+        left: 329px;
         width: 350px;
     }
 
