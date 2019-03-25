@@ -159,13 +159,12 @@ iframe {
     display: block;
 }
 
-.container .background {
+.container1 .background {
         height: 345px;
     
 }
 
 .Paragraph p {
-    width: 650px;
     margin: auto;
 }
 .navbar .Logo {
@@ -183,6 +182,7 @@ iframe {
 
 .background {
     background-size: 191px;
+    margin-top: 214px;
 }
 .position h1 {
     left: 15px;
@@ -196,6 +196,23 @@ iframe {
 
 .padding {
     padding: 0px 0px 0px 20px;
+}
+
+.supercontainer {
+    margin: auto;
+}
+
+.text {
+    width: 400px;
+}
+
+.position .header1 {
+    margin-bottom: 89px;
+}
+
+.superdiv {
+width: 700px;
+margin: auto;
 }
 
 }
@@ -268,5 +285,9 @@ iframe {
     left: 85px;
     top: 36px;
     font-size: 72px;
+}
+
+.superdiv {
+    width: 760px;
 }
 }
