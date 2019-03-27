@@ -3,6 +3,40 @@
 @import url('https://fonts.googleapis.com/css?family=Simonetta:400,900');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
+.Menu  .content {
+    width: 100%;
+    margin: auto;
+   
+}
+
+.M p {
+    padding-left: 20px;
+}
+
+
+.M h3 {
+    padding-left: 20px;
+}
+.prices {
+   
+    float: right;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.prices p {
+    text-align: right;
+    margin: 0px;
+    
+}
+
+.Paragraph .prices p {
+    padding-bottom: 4.5px;
+}
+
+.M .prices p{
+    padding-bottom: 0px;
+}
 
 body {
     margin: 0px;
