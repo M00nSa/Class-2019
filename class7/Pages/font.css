@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Abel|Nunito:400,600,700');
+
+td:first-child,
+td:last-child,
+.h1 h1,
+.header1,
+.MH1,
+#CnT, 
+#FB,
+#CS,
+#HC,
+.position h1,
+b,
+.content h3,
+.header2 h2,
+.main h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.FirstAP p::first-letter,
+.SecP p::first-letter,
+.main .content,
+.text {
+    font-family: 'Nunito', sans-serif;
+}

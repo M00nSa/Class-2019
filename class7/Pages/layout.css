@@ -215,6 +215,18 @@ width: 700px;
 margin: auto;
 }
 
+.tel p {
+font-size: 22px;
+}
+
+.FirstAP p {
+    padding: 50px 50px 50px;
+}
+
+.overlay {
+    height: 398px;
+}
+
 }
 
 /*************LARGE SCREENS*******************/
@@ -273,7 +285,7 @@ margin: auto;
         height: 364px;
     }
 
-    .tel p,
+    
     .main h3,
     .main ul,
     .content h4 {
@@ -289,5 +301,19 @@ margin: auto;
 
 .superdiv {
     width: 760px;
+}
+
+.FirstAP p {
+    padding: 50px 148px 50px;
+}
+
+.supercontainer .clearfix {
+    clear: none;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 37px;
+    width: 416;
 }
 }
