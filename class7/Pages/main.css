@@ -1,21 +1,9 @@
-
-
-
-.Menu  .content {
-    width: 100%;
-    margin: auto;
-   
-}
-
-
-
-
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 .container {
-    margin: 211px auto 0px;
+    margin: 211px auto 0;
     width: 290px;
 }
 
@@ -24,7 +12,7 @@ body {
 }
 
 .firstpage .content {
-    min-height: 0px;
+    min-height: 0;
 }
 
 .MH1,
@@ -37,8 +25,8 @@ body {
     background-color: white;
     height: 179px;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 6;
     
 }
@@ -83,7 +71,7 @@ width: 20%;
 .navbar ul li a:hover {
     font-size: 110%;
     border-bottom: 2px solid;
-    padding: 10px 0px;
+    padding: 10px 0;
     width: 2px;
 }
 
@@ -123,7 +111,7 @@ width: 20%;
 }
 
 .Logo {
-    width: 156px;
+    width: 140px;
     margin: 49px auto;
 }
 
@@ -139,7 +127,7 @@ width: 20%;
 .contentdiv img {
     top: 60px;
     width: 100px;
-    left: 110px;
+    left: 104px;
 }
 .text h1 {
     left: 8px;
@@ -160,6 +148,13 @@ width: 20%;
     display: block;
     margin-top: 71px;
 
+}
+
+
+.Menu  .content {
+    width: 100%;
+    margin: auto;
+   
 }
 
 #Visit {
@@ -191,7 +186,7 @@ width: 20%;
 #Sendmsg {
     background-color: black;
     color: white;
-    margin: 0px;
+    margin: 0;
 }
 
 .hide {
@@ -245,7 +240,7 @@ width: 20%;
 
 .address ul {
     list-style: none;
-    padding: 0px;
+    padding: 0;
     
 }
 
@@ -257,13 +252,13 @@ width: 20%;
 
 
 .height .content {
-    padding: 0px;
+    padding: 0;
 }
 
 .h1 h1,
 .header1,
 .MH1 {
-    padding: 25px 0px;
+    padding: 25px 0;
     text-align: center;
     background-color: #111D1B;
     color: white;
@@ -303,7 +298,7 @@ h4 {
 
 .form-input {
     display: block;
-    width: 270px;
+    width: 245px;
     margin-bottom: 20px;
     padding: 10px;
     border: 2px solid black;
@@ -329,7 +324,7 @@ h4 {
 height: 150px;
 }
 
-#Contact-img {
+.floater-section .Contact-img {
     min-height: 200px;  
 }
 
@@ -347,7 +342,7 @@ height: 150px;
 }
 
 .supercontainer .content{
-    min-height: 0px; 
+    min-height: 0; 
     }
 
 .main h2 {
@@ -386,8 +381,8 @@ color: white;
     margin: 0 auto 40px;;
 }
 
- #MP h4,
- #MP p{
+ .MP h4,
+ .MP p{
     text-align: left;
 }
 
@@ -404,7 +399,7 @@ color: white;
     top: 48px;
     color:  #2A5E2A;
     font-weight: 200;
-    text-shadow: 1px 0px 4px #ffffff;
+    text-shadow: 1px 0 4px #ffffff;
 }
 
 .position {
@@ -432,7 +427,7 @@ color: white;
 }
 
 .floater-sec .content {
-    min-height: 0px;
+    min-height: 0;
 }
 
 
@@ -466,9 +461,9 @@ td:first-child::after {
     position: absolute;
     bottom: 0;
     width:1500px;
-    height:0px ;
+    height:0 ;
     margin-left: 1em;
-    border-bottom:2px dotted grey;
+    border-bottom:2px dotted rgb(128, 128, 128);
 }
 
 td:last-child {
@@ -490,7 +485,7 @@ tbody tr:hover {
     position: absolute;
     width: 100vw;
     height: 195px;
-    top: 0px;
+    top: 0;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -509,7 +504,7 @@ tbody tr:hover {
 }
 
 .h2 {
-    min-height: 0px;
+    min-height: 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
@@ -521,4 +516,8 @@ tbody tr:hover {
 .FirstAP p::first-letter,
 .SecP p::first-letter{
     font-size: 56px;
+}
+iframe {
+    width: 290px;
+     height: 400px;
 }

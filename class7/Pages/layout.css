@@ -74,9 +74,9 @@
         display: initial;
     }
     .contentdiv img {
-        top: 77px;
+        top: 90px;
         width: 130px;
-        left: 140px;
+        left: 147px;
     }
    .text h1 {
         left: 10px;
@@ -130,9 +130,9 @@
         display: none;
     }
     .contentdiv img {
-        top: 150px;
+        top: 164px;
         width: 250px;
-        left: 270px;
+        left: 279px;
     }
     
     .text h1 {
@@ -152,7 +152,7 @@
 }
 iframe {
     width:300px;
-    height:368px;
+    height:396px;
 }
 
 .header1 h2 {
@@ -195,7 +195,7 @@ iframe {
 }
 
 .padding {
-    padding: 0px 0px 0px 20px;
+    padding: 0 0 0 20px;
 }
 
 .supercontainer {
@@ -203,7 +203,7 @@ iframe {
 }
 
 .text {
-    width: 400px;
+    width: 425px;
 }
 
 .position .header1 {
@@ -282,7 +282,7 @@ font-size: 22px;
 
     iframe {
         width:390px;
-        height: 364px;
+        
     }
 
     
