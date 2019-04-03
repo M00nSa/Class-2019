@@ -83,6 +83,7 @@
         top: 186px;
         font-size: 22px;
     }
+   
 }
 
 /*************MEDIUM SCREENS*******************/
@@ -169,7 +170,7 @@ iframe {
 }
 .navbar .Logo {
     width: 150px;
-    margin: 15px auto;
+    margin: 15px auto 0;
 }
 .floater {
     float: left;
@@ -225,6 +226,18 @@ font-size: 22px;
 
 .overlay {
     height: 398px;
+}
+
+nav.navbar a{
+    font-size: 22px;
+}
+
+#ct h1 {
+    margin: 21px 0;
+}
+
+#Marg h1 {
+    line-height: 80px;
 }
 
 }
