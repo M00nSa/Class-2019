@@ -477,9 +477,7 @@ b {
     border-bottom: 2px solid #2A5E2A;
 }
 
-tbody tr:hover {
-    background-color: #E2D6C7;
-}
+
 
 .overlay {
     position: absolute;
