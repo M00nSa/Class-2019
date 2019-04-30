@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet">
+    </head>
+        <body>
+            
+        <div class="main">
+            <div class="container">
+                <h1 id="Header">Surpeise!!</h1>
+                <h2 id="id1">You're the best and I'm so grateful for this!</h2>
+        <!-- (how to change a text to something else)
+                <p id="p1">This is it!</p>
+                <p id="p2">This is not necessary!</p> -->
+
+                <!-- <button id="triggerButton">Span</button> -->
+
+                <button type="button" onclick="document.getElementById('id1').style.color = '#F696A3' "> Click Here! </button>
+
+
+
+
+
+                <button id="b2" onclick="revealMessage()">Now maybe Here!!</button>
+                <div id="hiddenMessage" style="display:none">
+                    <p id="myP">You are going to Hawaii for a week with your friends for your Birthday! </p>
+                    <button id="countDownButton" onclick="countDown()">15</button>
+                
+                </div>
+
+
+
+                <img id="image" src="1.jpg" alt="present for you"/>
+                <button id="lastButton" onclick="imageChange()">Love You!</button>
+            
+        
+
+
+
+                <script>
+                    
+                document.getElementById("Header").style.color = "#F03D7E";
+
+                // document.write (Date());
+
+                // (how to change a text to something else) document.getElementById ('p1').innerHTML = "This is right!";
+                document.getElementById ('Header').style.fontSize = "65px";
+                document.getElementById ('p2').style.display = "none";
+
+                // (how to change one pic to another without using a button) document.getElementById("image").src = "2.jpg";
+
+                // document.getElementById ('triggerButton').addEventListener = ("click",myFunction);
+
+
+                function revealMessage(){
+                    document.getElementById ("hiddenMessage").style.display = "block";
+                }
+
+                function countDown(){
+                    var currentVal = document.getElementById("countDownButton").innerHTML;
+                    var newVal = 0;
+                    if (currentVal > 0){
+                        newVal = currentVal -1;
+                    }
+
+                    document.getElementById("countDownButton").innerHTML= newVal;
+
+                }
+
+                    function imageChange(){
+                        document.getElementById("image").src = "2.jpg";
+                    }
+
+                    // (didn't work) document.getElementById("myP").style.fonFamily= "'Rouge Script', cursive";
+                    
+
+                </script>
+
+
+
+            </div>
+        </div>
+    </body>
+</html>
