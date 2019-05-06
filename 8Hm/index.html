@@ -22,10 +22,6 @@
 
                 <button type="button" onclick="document.getElementById('id1').style.color = '#F696A3' "> Click Here! </button>
 
-
-
-
-
                 <button id="b2" onclick="revealMessage()">Now maybe Here!!</button>
                 <div id="hiddenMessage" style="display:none">
                     <p id="myP">You are going to Hawaii for a week with your friends for your Birthday! </p>
@@ -38,7 +34,7 @@
                 <img id="image" src="1.jpg" alt="present for you"/>
                 <button id="lastButton" onclick="imageChange()">Love You!</button>
             
-        
+               
 
 
 
@@ -50,7 +46,7 @@
 
                 // (how to change a text to something else) document.getElementById ('p1').innerHTML = "This is right!";
                 document.getElementById ('Header').style.fontSize = "65px";
-                document.getElementById ('p2').style.display = "none";
+                //document.getElementById('b2').style.display = "none";
 
                 // (how to change one pic to another without using a button) document.getElementById("image").src = "2.jpg";
 
@@ -76,9 +72,34 @@
                         document.getElementById("image").src = "2.jpg";
                     }
 
-                    // (didn't work) document.getElementById("myP").style.fonFamily= "'Rouge Script', cursive";
-                    
+                    document.getElementById("myP").style.fontFamily = "'Rouge Script', cursive";
 
+
+
+
+
+                    var sequence3 = function (){
+                        var imgCurrentBack = document.getElementById("image").style.backgroundColor;
+
+                        console.log(imgCurrentBack);
+
+                        var src1 = "1.jpg";
+                        var src2 = "2.jpg";
+
+                        
+
+                        if (imgCurrentBack === 'black'){
+                            document.getElementById("image").src = src2;
+                            document.getElementById("image").style.backgroundColor = 'red';
+                        }
+                        else {
+                            document.getElementById("image").src = src1;
+                            document.getElementById("image").style.backgroundColor = 'black';
+
+                        }
+                    }
+                    
+                    document.getElementById('lastButton').addEventListener('click', sequence3);
                 </script>
 
 

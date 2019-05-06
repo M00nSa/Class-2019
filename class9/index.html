@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java2</title>
+
+<style>
+    #Logo {
+        width: 150px;
+    }
+</style>
+
+
+</head>
+
+<body>
+    
+    <header>
+        <img id="Logo" src="https://i.etsystatic.com/15855982/r/il/6b829f/1659361620/il_1588xN.1659361620_gk9s.jpg" alt="BrandLogo"/>
+    </header>
+    <main>
+        <div class="buttons">
+            <button id="logoSwitch">Switch the logo!</button>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        var switchLogo = function(){
+
+            var imgCurrentSrc = document.getElementById("Logo").src;
+           
+          
+
+                        var src1 = "https://i.etsystatic.com/15855982/r/il/6b829f/1659361620/il_1588xN.1659361620_gk9s.jpg";
+                        var src2 = "https://static1.squarespace.com/static/58ebdd915016e1a6e81886cf/5935d4a6197aeaf7c918e95d/5939a589893fc0dea14ae8cc/1552052883484/Nike_LOGO_web.jpg?format=1500w";
+
+                        
+
+                        if (imgCurrentSrc === src1){
+                            
+                            document.getElementById("Logo").src = src2;
+                        }
+                        else {
+                            document.getElementById("Logo").src = src1;
+                        }
+                    
+
+        }
+
+        document.getElementById("logoSwitch").addEventListener('click',switchLogo);
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
