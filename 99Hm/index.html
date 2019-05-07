@@ -27,7 +27,7 @@
     <input type="text" placeholder="Search.." class="Searchbar">
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" id="Icon"  onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 
@@ -79,9 +79,28 @@ var sequence1 = function() {
   header1.style.fontFamily = "'Varela Round', sans-serif";
   header1.innerHTML = "Shop Here!";
   header1.style.fontSize = "22px";
+  header1.style.padding = "8px";
 }
 
 button1.addEventListener('click', sequence1);
+
+
+// /* When the user clicks on the button, 
+// toggle between hiding and showing the dropdown content */
+       
+// function myFunction() {
+//   document.getElementById("Icon").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+//         window.onclick = function(e) {
+//   if (!e.target.matches('.icon')) {
+//   var myDropdown = document.getElementById("Icon");
+//     if (myDropdown.classList.contains('show')) {
+//       myDropdown.classList.remove('show');
+//     }
+//   }
+// }
 
 
 
