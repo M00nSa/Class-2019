@@ -1,0 +1,59 @@
+
+.mainimg,
+.container {
+    display: none;
+}
+
+.Searchbar {
+    display: none;
+}
+
+.Logo2 {
+    display: none;
+}
+
+.navbar #myLinks {
+    display: none;
+}
+
+
+/*************SMALL SCREENS********************/
+@media (min-width: 414px){
+    .superdiv {
+        width: 404px;
+    }
+
+   
+}
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .superdiv {
+        width: 760px;
+    }
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .superdiv {
+        width: 960px;
+    }
+
+    .mainimg,
+    .container,
+    .Logo2,
+    .Searchbar {
+        display: block;
+    }
+
+.Logo1,
+.icon,
+.navbar a {
+display: none;
+}
+
+.navbar #myLinks {
+    display: block;
+}
+
+
+}
