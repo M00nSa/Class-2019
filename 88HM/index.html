@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java Dropdown Button</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+
+
+    <body>
+
+      <div class="superdiv">
+
+          
+
+        <div class="Logo2">
+            <img id="image" src="1.png" alt="BrandLogo"/>
+        </div>
+
+        <div class="navbar">
+            <div class="Logo1">
+                <img src="3.png" alt="Logo"/>
+            </div>
+                <div id="myLinks">
+                  
+                <a href="#home" class="active">home</a>
+                <a href="#sale">Sale</a>
+                <input type="text" placeholder="Search.." class="Searchbar">
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Shop by Pet
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Dog</a>
+                  <a href="#">Cat</a>
+                  <a href="#">Fish</a>
+                </div>
+                </div>
+              </div> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+              </div>
+
+              
+             
+
+              <div class="mainimg ">
+                  <img src="2.jpg" alt="dogcatimg"/>
+              </div>
+
+            <div class="container ">
+              <h1 id="H1">Welcome</h1>
+              <button id="B1">Click me!</button>
+            
+            </div>
+          </div>
+
+            
+
+        <script>
+        
+        var header1 = document.getElementById("H1");
+        var button1 = document.getElementById("B1");
+
+        var sequence1 = function() {
+            header1.style.background = "#333";
+            header1.style.color = "White";
+            header1.style.textAlign = "center";
+            header1.style.fontFamily = "'Varela Round', sans-serif";
+            header1.innerHTML = "Shop Here!";
+        }
+        
+        button1.addEventListener('click', sequence1);
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+       
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+        </script>
+
+    </body>
+
+</html>
