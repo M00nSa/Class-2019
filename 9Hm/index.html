@@ -37,7 +37,7 @@
 <div class="superdiv">
 
 <div class="mainimg ">
-    <img src="2.jpg" alt="dogcatimg"/>
+    <img id="firstimg" src="2.jpg" alt="dogcatimg"/>
 </div>
 
 
@@ -45,6 +45,7 @@
 <div class="container " id="Welcome">
     <h1 id="H1">Welcome</h1>
     <button id="B1">Click me!</button>
+    <button id="B2">Then me!</button>
   
   </div>
 </div>
@@ -86,23 +87,28 @@ var sequence1 = function() {
 
 button1.addEventListener('click', sequence1);
 
+var sequence4 = function (){
+                        var imgCurrentBack = document.getElementById("firstimg").style.backgroundColor;
 
-// /* When the user clicks on the button, 
-// toggle between hiding and showing the dropdown content */
-       
-// function myFunction() {
-//   document.getElementById("Icon").classList.toggle("show");
-// }
+                        console.log(imgCurrentBack);
 
-// // Close the dropdown if the user clicks outside of it
-//         window.onclick = function(e) {
-//   if (!e.target.matches('.icon')) {
-//   var myDropdown = document.getElementById("Icon");
-//     if (myDropdown.classList.contains('show')) {
-//       myDropdown.classList.remove('show');
-//     }
-//   }
-// }
+                        var src1 = "2.jpg";
+                        var src2 = "4.jpg";
+
+                        
+
+                        if (imgCurrentBack === 'black'){
+                            document.getElementById("firstimg").src = src2;
+                            document.getElementById("firstimg").style.backgroundColor = 'red';
+                        }
+                        else {
+                            document.getElementById("firstimg").src = src1;
+                            document.getElementById("firstimg").style.backgroundColor = 'black';
+
+                        }
+                    }
+                    
+                    document.getElementById('B2').addEventListener('click', sequence4);
 
 
 

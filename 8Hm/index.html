@@ -79,22 +79,20 @@
 
 
                     var sequence3 = function (){
-                        var imgCurrentBack = document.getElementById("image").style.backgroundColor;
+                        var imgCurrentBack = document.getElementById("image").whichOne;
 
                         console.log(imgCurrentBack);
 
                         var src1 = "1.jpg";
                         var src2 = "2.jpg";
 
-                        
-
-                        if (imgCurrentBack === 'black'){
+                        if (imgCurrentBack === 'source2'){
                             document.getElementById("image").src = src2;
-                            document.getElementById("image").style.backgroundColor = 'red';
+                            document.getElementById("image").whichOne = 'source1';
                         }
                         else {
                             document.getElementById("image").src = src1;
-                            document.getElementById("image").style.backgroundColor = 'black';
+                            document.getElementById("image").whichOne = 'source2';
 
                         }
                     }

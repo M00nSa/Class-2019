@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<header>
+
+</header>
+
+
+<main>
+    <h1>Which car would you like to test?</h1>
+
+    <form action="" method="POST">
+        <label for="carMake"> Car Make:</label>
+        <select name="make" id="carMake">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Merc">Mercedes</option>
+            <option value="Porsche">Porsche</option>
+        </select>
+
+        <label for="carModel">Model</label>
+        <select name="model" id="carModel"></select>
+
+    </form>
+</main>
+
+
+
+<script>
+
+// [] are for Array: they can be numbers,strings,etc. They can have diff number of members in them (diff length). They are 0 based.
+// this-->is makeDropdown, instead of makeDropdown we used this . We can reference elements by this.
+// i++ --> short for i+1
+// += --> append, adds to the existing thing
+
+var Audimodels = ["S3", "S5", "S7"];
+var BMWmodels = ["Series-3", "Series-4", "Series-5", "Series-6"];
+var Mercedesmodels = ["C-clas", "E-clas", "S-clas"];
+var Porschemodels = ["911", "Macan", "Panamera", "Cayenne"];
+
+var makeDropdown = document.getElementById("carMake");
+var modelDropdown = document.getElementById ("carModel");
+makeDropdown.addEventListener("change", function(){
+    console.log(this.value);
+
+
+    modelDropdown.innerHTML = "";
+
+    if (this.value === "Audi"){
+    for(var i = 0;i < Audimodels.length;i++){
+        modelDropdown.innerHTML += '<option value="' + Audimodels[i] + '">' + Audimodels[i] + '</option>'};
+    }
+    
+
+    if (this.value === "BMW"){
+        for(var i = 0;i < BMWmodels.length;i++){
+        modelDropdown.innerHTML += '<option value="' + BMWmodels[i] + '">' + BMWmodels[i] + '</option>'};
+    }
+
+    if (this.value === "Merc"){
+        for(var i = 0;i < Mercedesmodels.length;i++){
+        modelDropdown.innerHTML += '<option value="' + Mercedesmodels[i] + '">' + Mercedesmodels[i] + '</option>'};
+    }
+
+    if (this.value === "Porsche"){
+        for(var i = 0;i < Porschemodels.length;i++){
+        modelDropdown.innerHTML += '<option value="' + Porschemodels[i] + '">' + Porschemodels[i] + '</option>'};
+    }
+    
+
+  
+    // option value = "" > text </option>
+    // This is a lupe--> 2lines instead of 4 lines
+
+    // using lupe instead of this
+    // makeDropdown.innerHTML += '<option value=' + BMWmodels[0] + '">' + BMWmodels [0] + '</option>';
+    // makeDropdown.innerHTML += '<option value=' + BMWmodels[1] + '">' + BMWmodels [1] + '</option>';
+    // makeDropdown.innerHTML += '<option value=' + BMWmodels[2] + '">' + BMWmodels [2] + '</option>';
+    // makeDropdown.innerHTML += '<option value=' + BMWmodels[3] + '">' + BMWmodels [3] + '</option>';
+
+});
+</script>
+
+</body>
+</html>
