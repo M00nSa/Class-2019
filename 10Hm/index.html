@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
 </head>
+
 <body>
-    
-<main>
+
+  <main>
     <h1>What Does Your Personality Color Say About You?</h1>
 
     <form action="" method="POST">
-        <label for="colorType">Color:</label>
-        <select name="color" id="cT">
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option id="Y" value="yellow">Yellow</option>
-           
-        </select>
+      <label for="colorType">Color:</label>
+      <select name="color" id="cT">
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option id="Y" value="yellow">Yellow</option>
 
-        <!-- <label for="colorMeaning">Means</label>
-        <select name="meaning" id="colorMeaning"></select> -->
-        
-        
-
+      </select>
 
     </form>
 
 
 
     <div class="buttons">
-    <button onclick="myFunction()">Red</button>
-    <button onclick="myFunction1()">orange</button>
-    <button onclick="myFunction2()">yellow</button>
-</div>
+      <button onclick="myFunction()">Red</button>
+      <button onclick="myFunction1()">orange</button>
+      <button onclick="myFunction2()">yellow</button>
+    </div>
 
     <p id="demo"></p>
     <p id="demo1"></p>
@@ -45,74 +41,71 @@
 
 
 
-</main>
+  </main>
 
 
 
-<script>
-
-var redMeaning = ["If your favorite color is red you are action oriented with a deep need for physical fulfillment and to experience life through the five senses"];
-var orangeMeaning =["If orange is your favorite color, you have a great need to be with people, to socialize with them, and be accepted and respected as part of a group"];
-var yellowMeaning = ["Choosing yellow as your favorite means you have a deep need for logical order in your everyday life"]
-
-
-var favoriteColor = document.getElementById("cT");
-var revealMeaning = document.getElementById("colorMeaning");
-
-favoriteColor.addEventListener("change", function(){
-
-if(this.value === "red"){
-   alert("If your favorite color is red you are action oriented with a deep need for physical fulfillment and to experience life through the five senses");
- 
-}
-
-else if(this.value === 'orange'){
-    alert("If orange is your favorite color, you have a great need to be with people, to socialize with them, and be accepted and respected as part of a group");
-
-}
-
-document.getElementById("Y").innerHTML = redMeaning;
-// document.getElementById("Y").innerHTML = alert("redMeaning");
+  <script>
+    var meaning = [
+      "If your favorite color is red you are action oriented with a deep need for physical fulfillment and to experience life through the five senses","If orange is your favorite color, you have a great need to be with people, to socialize with them, and be accepted and respected as part of a group", "Choosing yellow as your favorite means you have a deep need for logical order in your everyday life"
+    ]
 
 
+    var favoriteColor = document.getElementById("cT");
+    var revealMeaning = document.getElementById("colorMeaning");
 
+    favoriteColor.addEventListener("change", function(){
 
-});
+      if (this.value === "red") {
+        alert(meaning[0]);
+        document.getElementById("demo1").innerHTML = meaning[0];
+      } 
+      else if (this.value === 'orange') {
+        alert(meaning[1]);
+        document.getElementById("demo1").innerHTML = meaning[1];
+      }
+      else if( this.value === 'yellow'){
+        alert(meaning[2]);
+        document.getElementById("demo1").innerHTML = meaning[2];
+      }
+
+    });
 
 
 
-function myFunction() {
-  var red = ["If your favorite color is red you are action oriented with a deep need for physical fulfillment and to experience life through the five senses"];
-  red .toString();
-  document.getElementById("demo").innerHTML = red;
-}
+    // function myFunction(){
+    //   var red = [
+    //     "If your favorite color is red you are action oriented with a deep need for physical fulfillment and to experience life through the five senses"
+    //   ];
+    //   red.toString();
+    //   document.getElementById("demo").innerHTML = red;
+    // }
 
-function myFunction1() {
-  
-  var orange =["If orange is your favorite color, you have a great need to be with people, to socialize with them, and be accepted and respected as part of a group"];
+    // function myFunction1() {
 
-  document.getElementById("demo1").innerHTML = orange;
- 
-}
+    //   var orange = [
+    //     "If orange is your favorite color, you have a great need to be with people, to socialize with them, and be accepted and respected as part of a group"
+    //   ];
 
+    //   document.getElementById("demo1").innerHTML = meaning;
 
-function myFunction2() {
-  
-  var yellow =["Choosing yellow as your favorite means you have a deep need for logical order in your everyday life"];
-
-  document.getElementById("demo2").innerHTML = yellow;
- 
-}
+    // }
 
 
+    // function myFunction2() {
 
+    //   var yellow = [
+    //     "Choosing yellow as your favorite means you have a deep need for logical order in your everyday life"
+    //   ];
 
+    //   document.getElementById("demo2").innerHTML = yellow;
 
-
-</script>
+    // }
+  </script>
 
 
 
 
 </body>
+
 </html>
