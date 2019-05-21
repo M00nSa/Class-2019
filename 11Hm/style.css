@@ -1,0 +1,44 @@
+
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 150px;
+    margin: auto;
+}
+
+.blue-container {
+    background-color: lightskyblue;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: none;
+   
+}
+
+#theImg {
+    max-width: 100%;
+}
+
+.main {
+    margin: auto;
+    width: 620px;
+}
+
+.children
+ {
+max-width: 100%;
+
+}
+
+#child1 {
+max-width: 100%;
+}
+
+form {
+    width: 283px;
+    margin: auto;
+}

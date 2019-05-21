@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disney Movie Posters</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+
+
+</head>
+<body>
+    <div class="main">
+    <h1 class="header"> Welcome to Disney Movie Poster Website!</h1>
+    
+    <div class="buttons">
+        <button id="btn1">Append Things</button>
+        <button id="btn2">Prepend Things</button>
+
+        <button id="btn3">Remove Addons</button>
+        <button id="btn4">Empty Container</button>
+        <button id="btn5">Remove Posters</button>
+
+
+        <button id="colorToggle">Switch Color!</button>
+    </div>
+    <div class="container">
+        <img  id="child1" src='https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555449052/shape/mentalfloss/waltdisneylogo.jpg'/>
+        <div class="box"> <div class="imgcontainer"><img id='theImg' src='https://i.pinimg.com/originals/58/3f/35/583f35f6c05f0186f55107781e726e29.jpg'/></div></div>
+    </div>
+
+
+<form action="" method="POST">
+    <input type="text" name="name" id="myName">
+    <input type="email" name="email" id="myEmail">
+    <select id="FX" name="effects">
+        <option value="" default></option>
+        <option value="show">Show an element</option>
+        <option value="hide">Hide an element</option>
+        <option value="fadein">Fade it in</option>
+        <option value="fadeout">Fade it out</option>
+        <option value="slidedown">slide it down</option>
+        <option value="slideup">slide it up</option>
+    </select>
+    <input type="submit" value="submit">
+
+</form>
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').css('background-color','#231F20');
+
+            $('#FX').change(function(){
+                var selection = $(this).val();
+
+                if(selection === "show"){
+                    $('.box').show();
+                }
+
+                else if (selection === 'hide'){
+                    $('.box').hide();
+                }
+
+                else if (selection === 'fadein'){
+                    $('.box').fadeIn(2000);
+                }
+                else if (selection === 'fadeout'){
+                    $('.box').fadeOut(3000);
+                }
+                else if (selection === 'slidedown'){
+                    $('.box').slideDown();
+                }
+                else if (selection === 'slideup'){
+                    $('.box').slideUp();
+                }
+            })
+
+            $('#colorToggle').click(function(){
+                $('.container').toggleClass('blue-container');
+            })
+
+            $('#myName').blur(function(){
+                console.log( $('#myName').val() );
+
+                if ($ ('#myName').val() === "Mahsa"){
+                    $('#myEmail').val('mahsa8mirkhani@gmail.com');
+                }
+            })
+            $('.header').css('color', '#81D4FA');
+
+        
+
+            $('#btn1').click(function(){
+                $('.container').append('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIxODEyOTE4NzUw/brutally-honest-disney-film-posters-1.webp" class="children pic"/></div>');
+                $('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIyNjE4MjIzODkw/brutally-honest-disney-film-posters-2.webp" class="children pic"/>').appendTo('.container');
+                $('.container').after('<div class= "addon"> I am after</div>');
+                
+            })
+            
+
+            $('#btn2').click(function(){
+                $('.container').prepend('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIzNDIzNTQzMzA2/brutally-honest-disney-film-posters-3.webp" class="children pic"/></div>');
+                $('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjI0MjI4ODM2NjI2/brutally-honest-disney-film-posters-4.webp" class="children pic"/></div>').prependTo('.container');
+                $('.container').before('<div class= "addon"> I am before</div>');
+                
+            })
+
+            $('#btn3').click(function(){
+                $('.addon').remove();
+            })
+
+            $('#btn4').click(function(){
+                $('.container').empty();
+            })
+            $('#btn5').click(function(){
+                $('.pic').remove();
+            })
+
+        })
+       
+
+
+    </script>
+</body>
+</html>

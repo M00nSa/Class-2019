@@ -1,0 +1,44 @@
+
+h1.header {
+    text-align: center;
+    font-family: cursive;
+    background-color: #1d2acc;
+    letter-spacing: 1.8px;
+
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 414px){
+    .main {
+        width: 404px;
+    }
+    h1.header {
+        font-size: 33px;
+    }
+    .buttons {
+        margin: auto;
+        width: 268px;
+    }
+    .buttons button {
+        margin: 15px;
+    }
+  
+   
+}
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    .main {
+        width: 760px;
+    }
+
+    
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    .main {
+        width: 960px;
+    }
+
+
+}
