@@ -18,6 +18,7 @@ ul{
 
 li {
     margin: 5px 10px;
+    background-color: mistyrose;
 }
 
 /*   flex-direction: column/row for small screens or large screens */
@@ -33,6 +34,7 @@ order: 0;
 
     li#home {
         order: 1;
+        flex-grow:2;
         }
 
     li:nth-last-child(2){
@@ -46,3 +48,6 @@ order: 0;
 
 
 }
+
+/* align-items:stretch -->> elements stretch main axis
+flex-grow:2 --> on one item vertically , for pictures*/
