@@ -42,3 +42,7 @@ form {
     width: 283px;
     margin: auto;
 }
+
+.remove-this {
+    background-color: red;
+}

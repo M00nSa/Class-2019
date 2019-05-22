@@ -17,13 +17,11 @@
     <div class="buttons">
         <button id="btn1">Append Things</button>
         <button id="btn2">Prepend Things</button>
-
         <button id="btn3">Remove Addons</button>
         <button id="btn4">Empty Container</button>
         <button id="btn5">Remove Posters</button>
+        <button id="btn6">Remove selected ones</button>
 
-
-        <button id="colorToggle">Switch Color!</button>
     </div>
     <div class="container">
         <img  id="child1" src='https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555449052/shape/mentalfloss/waltdisneylogo.jpg'/>
@@ -55,6 +53,7 @@
     <script>
         $(document).ready(function(){
             $('body').css('background-color','#231F20');
+
 
             $('#FX').change(function(){
                 var selection = $(this).val();
@@ -94,19 +93,41 @@
             })
             $('.header').css('color', '#81D4FA');
 
+
+
+
+
         
+            $("#btn6").click(function(){
+                $(".container").prepend(
+                    '<div class="addon">\
+                    <img class="children" src="https://images-na.ssl-images-amazon.com/images/I/61F9FP1NvSL.jpg"/>\
+                    <button class="remove-this"> Remove this one </button>\
+                    </div>'
+                );
+
+            });
+
+            $('body').on('click', '.remove-this', function(){
+                console.log($(this).parent('.addon'));
+                $(this).parent('.addon').remove();
+            })
+
+
+
+
 
             $('#btn1').click(function(){
-                $('.container').append('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIxODEyOTE4NzUw/brutally-honest-disney-film-posters-1.webp" class="children pic"/></div>');
-                $('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIyNjE4MjIzODkw/brutally-honest-disney-film-posters-2.webp" class="children pic"/>').appendTo('.container');
+                $('.container').append('<div class="container-child addon"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIxODEyOTE4NzUw/brutally-honest-disney-film-posters-1.webp" class="children pic"/>  <button class="remove-this"> Remove this image </button>\ </div>');
+                $('<div class="container-child addon"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIyNjE4MjIzODkw/brutally-honest-disney-film-posters-2.webp" class="children pic"/>  <button class="remove-this"> Remove this image </button>\ </div>').appendTo('.container');
                 
                 
             })
             
 
             $('#btn2').click(function(){
-                $('.container').prepend('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIzNDIzNTQzMzA2/brutally-honest-disney-film-posters-3.webp" class="children pic"/></div>');
-                $('<div class="container-child"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjI0MjI4ODM2NjI2/brutally-honest-disney-film-posters-4.webp" class="children pic"/></div>').prependTo('.container');
+                $('.container').prepend('<div class="container-child addon"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjIzNDIzNTQzMzA2/brutally-honest-disney-film-posters-3.webp" class="children pic"/> <button class="remove-this"> Remove this image </button>\ </div>');
+                $('<div class="container-child addon"><img src="https://blazepress.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_630/MTI4OTgzNjI0MjI4ODM2NjI2/brutally-honest-disney-film-posters-4.webp" class="children pic"/> <button class="remove-this"> Remove this image </button>\ </div>').prependTo('.container');
                
                 
             })
