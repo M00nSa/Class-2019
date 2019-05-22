@@ -2,12 +2,18 @@ body {
     margin: 0px;
 }
 
+nav{
+background-color: lightskyblue;
+}
+
 ul{
     padding-left: 0px;
     list-style: none;
     display: flex;
     flex-direction: column;
-
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; use both of them together*/ 
+    justify-content: flex-end;
 }
 
 li {
@@ -16,8 +22,27 @@ li {
 
 /*   flex-direction: column/row for small screens or large screens */
 
+li#home {
+order: 0;
+}
+
 @media(min-width: 768px) {
     ul {
     flex-direction: row;
     }
+
+    li#home {
+        order: 1;
+        }
+
+    li:nth-last-child(2){
+        order: 2;
+    }
+
+    li:nth-last-child(1){
+        order: 3;
+    }
+
+
+
 }
