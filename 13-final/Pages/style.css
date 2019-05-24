@@ -197,6 +197,7 @@ right: -200px;
   height: 5px;
   margin: 5px 0px;
   background-color: white;
+  border-radius: 5px;
 }
 
 p a {
