@@ -84,9 +84,15 @@ i.fa.fa-bars {
     text-decoration: none;
 }
 
-.HColor:hover li{
+.Firstpageopt .HColor:hover {
   background-color: #ee79a2;
 }
+
+.Firstpageopt #Donate:hover {
+  background-color: #ee79a2;
+}
+
+
 
 .Eventpic img {
   width: 48%;
@@ -125,8 +131,10 @@ h2 {
 #Donate {
   background: url(../Pictures/Hearticon.png);
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 20px;
+  background-position: 90% 25%;
+  background-size: 15px;
+
+  
  
 }
 
