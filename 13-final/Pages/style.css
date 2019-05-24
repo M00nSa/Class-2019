@@ -84,8 +84,8 @@ i.fa.fa-bars {
     text-decoration: none;
 }
 
-.HColor:hover {
-  color: #ee79a2;
+.HColor:hover li{
+  background-color: #ee79a2;
 }
 
 .Eventpic img {
@@ -194,4 +194,8 @@ right: -200px;
 p a {
   text-decoration: none;
   color: #742282;
+}
+
+.Eventtext p::first-letter {
+  font-size: 36px;
 }
