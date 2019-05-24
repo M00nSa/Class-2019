@@ -1,0 +1,101 @@
+
+
+.container {
+    display: none;
+}
+
+.Searchbar {
+    display: none;
+}
+
+.Logo2 {
+    display: none;
+}
+
+.navbar #myLinks {
+    display: none;
+}
+
+main {
+    display: none;
+}
+
+h1 {
+    display: none;
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 414px){
+    .superdiv {
+        width: 404px;
+    }
+
+   
+}
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+
+    .superdiv {
+        width: 760px;
+    }
+  
+    main {
+        display: block;
+    }
+
+    .Firstpageopt {
+        display: none;
+    }
+
+
+h1 {
+    display: block;
+}
+
+
+
+#Sidebar ul li {
+    display: inline-block;
+}
+
+ .togglebtn {
+    display: none;
+}
+
+#Sidebar a {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-top: 59px;
+    font-size: 20px;
+}
+
+
+
+.mainimg img {
+    width: 760px;
+}
+
+
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    
+    .superdiv {
+        width: 960px;
+      
+    }
+    
+.Logo1 img {
+    width: 140px;
+}
+
+.mainimg img {
+    width: 960px;
+}
+
+
+
+
+}

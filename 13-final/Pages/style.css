@@ -1,0 +1,197 @@
+body {
+  margin: 0px;
+  font-family:  Helvetica;
+}
+
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient(to right, #101385 , #c23062);
+  height: 191px;
+}
+
+.navbar a {
+ 
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+#image {
+  margin: auto;
+  display: block;
+}
+
+.mainimg img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+#H1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#B1 {
+  margin: auto;
+  display: block;
+}
+.Logo1 img {
+  width: 95px;
+  display: inline;
+  float: left;
+  padding: 23px;
+}
+
+.superdiv {
+  margin: auto;
+}
+
+a.icon {
+  float: right;
+  padding: 60px 20px 10px;
+}
+
+
+i.fa.fa-bars {
+  color: white;
+  border: 1px solid white;
+  padding: 11px;
+  border-radius: 5px;
+}
+
+.slidebar .Hover:hover {
+  color: black;
+  
+}
+
+.Firstpageopt .HColor{
+  color: #c23062;
+    border: 1px solid #c23062;
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 9px;
+    letter-spacing: .5px;
+    width: 95px;
+    float: left;
+    margin: 16px 30px 38px;
+    text-decoration: none;
+}
+
+.HColor:hover {
+  color: #ee79a2;
+}
+
+.Eventpic img {
+  width: 48%;
+  float: left;
+  padding-top: 70px;
+}
+
+.Eventtext {
+  padding: 5px;
+    display: inline;
+    float: right;
+    width: 48%;
+    letter-spacing: .8px;
+    line-height: 37px;
+    font-size: 25px;
+}
+h2 {
+  font-size: 26px;
+  color: #742282;
+}
+
+.Firstpageopt {
+  height: 144px;
+  margin: 50px auto;
+  width: 350px;
+}
+
+.Firstpageopt li {
+  list-style: none;
+}
+
+.Firstpageopt li a {
+  text-decoration: none;
+}
+
+#Donate {
+  background: url(../Pictures/Hearticon.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 20px;
+ 
+}
+
+.Firstpageopt #Donate  {
+  color: white;
+}
+
+h1 {
+  border-bottom: 1px solid #c23062;
+    padding: 40px 0px 40px;
+    color: #c23062;
+    text-align: center;
+}
+
+.Eventcontainer {
+  height: 350px;
+  margin-top: 45px;
+}
+
+
+li {
+margin: 0px;
+padding: 0px;
+}
+ul {
+  padding: 0px;
+}
+
+#Sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: #c23062;
+right: -200px;
+  transition: all 1000ms linear;
+}
+
+#Sidebar:active {
+  right: 0px;
+}
+
+
+#Sidebar ul li {
+  color: white;
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(64, 5, 92, 0.3);
+}
+
+#Sidebar .togglebtn {
+  position: absolute;
+  right:230px;
+  top: 20px;
+  margin: 54px 20px;
+}
+
+#Sidebar .togglebtn span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px 0px;
+  background-color: white;
+}
+
+p a {
+  text-decoration: none;
+  color: #742282;
+}
