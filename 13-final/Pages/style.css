@@ -52,18 +52,6 @@ body {
   margin: auto;
 }
 
-a.icon {
-  float: right;
-  padding: 60px 20px 10px;
-}
-
-
-i.fa.fa-bars {
-  color: white;
-  border: 1px solid white;
-  padding: 11px;
-  border-radius: 5px;
-}
 
 .slidebar .Hover:hover {
   color: black;
@@ -100,14 +88,19 @@ i.fa.fa-bars {
  
 }
 
-.Eventtext {
+.Eventtext,
+.AboutP,
+.SecP {
   padding: 5px;
-    display: inline;
-    float: right;
-    width: 48%;
     letter-spacing: .8px;
     line-height: 37px;
     font-size: 21px;
+}
+
+.Eventtext {
+  display: inline;
+  float: right;
+  width: 48%;
 }
 h2 {
   font-size: 24px;
@@ -214,24 +207,33 @@ p a {
   border-top: 1px solid #c23062;
   border-bottom: 1px solid #c23062;
   padding: 20px;
-color: #c23062;
-background-color: #ee79a2;
+  color: #c23062;
+  background-color: #ee79a2;
 }
 
-.EventsBtn button {
+.EventsBtn button,
+.SecP button,
+.AboutP button {
 background-color: #c23062;
     padding: 20px;
-    border-radius: 13px;
+    border-radius: 5px;
     border: 0px;
     font-size: 28px;
     color: white;
 }
 
+.SecP button,
+.AboutP button {
+  padding: 8px;
+  font-size: 18px;
+}
+
+
 .EventsBtn {
   text-align: center;
   border-top: 1px solid #c23062;
   border-bottom: 1px solid #c23062;
-  padding: 30px 0px;
+  padding: 50px 0px;
 }
 
 
@@ -241,7 +243,7 @@ background-color: #c23062;
   position: relative;
 }
 
-.content {
+.content{
   min-height: 175px;
   text-align: center;
 }
@@ -252,11 +254,16 @@ background-color: #c23062;
   clear: both;
 }
 
-.content img {
+.content img,
+.content2 img {
   max-width: 100%;
-    filter: opacity(50%);
-  
+
 }
+
+.content img{
+  filter: opacity(50%);
+}
+
 
 #Color1 {
   background-color: #1d35e1e8;
@@ -321,4 +328,99 @@ footer {
   color: white;
   letter-spacing: 1px;
   font-size: 21px;
+}
+
+.Header h1 {
+  text-align: center;
+  border-bottom: 1px solid #c23062;
+  padding: 50px 0px;
+}
+
+main h2 {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.AboutP p::first-letter,
+.Quote p::first-letter  {
+  font-size: 36px;
+}
+
+.AboutP  {
+  padding: 30px;
+}
+
+iframe {
+  margin: auto;
+  display: block;
+}
+
+.Quote {
+  margin: 30px auto 0px;
+  padding: 30px;
+  letter-spacing: 1.2px;
+  line-height: 39px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.Q1 {
+  text-align: left;
+  
+}
+
+.p {
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+
+.Q2 {
+  text-align: right;
+}
+  
+.SecP{
+  text-align: left;
+}
+
+.StoryContainer {
+  padding: 30px;
+}
+
+.Storydiv{
+  padding: 30px 25px;
+}
+
+
+.SecP h2 {
+  text-align: left;
+}
+
+.StoryRight {
+  float: right;
+}
+
+.Storyleft,
+.AboutStory {
+  float: left;
+}
+
+.Storyleft {
+  margin-top: 141px;
+}
+
+.content3 {
+  padding: 20px;
+}
+
+.AboutP h3 {
+  font-size: 23px;
+  color: #1226b3e8;
+}
+
+h1{
+  font-size: 34px;
+}
+
+h2{
+  font-size: 27px;
 }
