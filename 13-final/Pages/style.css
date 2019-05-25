@@ -90,7 +90,8 @@ body {
 
 .Eventtext,
 .AboutP,
-.SecP {
+.SecP,
+.AboutDonation {
   padding: 5px;
     letter-spacing: .8px;
     line-height: 37px;
@@ -213,7 +214,8 @@ p a {
 
 .EventsBtn button,
 .SecP button,
-.AboutP button {
+.AboutP button,
+.AboutDonation button {
 background-color: #c23062;
     padding: 20px;
     border-radius: 5px;
@@ -223,7 +225,7 @@ background-color: #c23062;
 }
 
 .SecP button,
-.AboutP button {
+.AboutP button{
   padding: 8px;
   font-size: 18px;
 }
@@ -293,6 +295,15 @@ background-color: #c23062;
 }
 
 
+
+.section {
+  width: 100%;
+  height: 490px;
+  background-size: cover;
+  position: relative;
+  background: url(../Pictures/history.jpg);
+}
+
 section {
   width: 100%;
   height: 175px;
@@ -346,7 +357,8 @@ main h2 {
   font-size: 36px;
 }
 
-.AboutP  {
+.AboutP,
+.AboutDonation  {
   padding: 30px;
 }
 
@@ -369,10 +381,6 @@ iframe {
   
 }
 
-.p {
-  border-top: 1px solid orange;
-  border-bottom: 1px solid orange;
-}
 
 .Q2 {
   text-align: right;
@@ -412,7 +420,8 @@ iframe {
   padding: 20px;
 }
 
-.AboutP h3 {
+.AboutP h3,
+.AboutDonation h3 {
   font-size: 23px;
   color: #1226b3e8;
 }
@@ -424,3 +433,37 @@ h1{
 h2{
   font-size: 27px;
 }
+
+.SupportH1 h1{
+    position: absolute;
+    top: 230px;
+    line-height: 56px;
+    color: white;
+    font-size: 42px;
+    letter-spacing: 1.2px;
+    border: 0px;
+}
+
+.section .Overlay {
+  background: rgba(0, 90, 193, 0.6);
+}
+
+#SupportP p{
+  text-align: center;
+}
+
+#SupportP button {
+  display: block;
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 23px;
+}
+.AboutDonation p {
+  margin-top: 55px;
+}
+
+.AboutDonation button {
+  margin-top: 13px;
+  font-size: 18px;
+}
+
