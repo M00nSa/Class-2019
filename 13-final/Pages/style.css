@@ -448,9 +448,6 @@ h2{
   background: rgba(0, 90, 193, 0.6);
 }
 
-#SupportP p{
-  text-align: center;
-}
 
 #SupportP button {
   display: block;
@@ -465,5 +462,96 @@ h2{
 .AboutDonation button {
   margin-top: 13px;
   font-size: 18px;
+}
+
+.Formcontainer {
+  width: 390px;
+  margin: auto;
+  top: 200px;
+}
+
+.form-input {
+  display: block;
+  width: 390px;
+  padding: 10px 0px;
+  border: 1px solid #e1e1e1;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+
+}
+
+fieldset {
+  border: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.UText {
+
+  margin: 5px 0px 20px;
+}
+
+.Display {
+display: block;
+margin: 30px 0px;
+}
+
+#SNote {
+  margin-top: 20px;
+}
+
+#Recipient {
+  height: 110px;
+}
+
+#Note {
+  height: 200px;
+}
+
+#DType {
+  margin-bottom: 0px;
+}
+
+#SubmitDonation {
+  padding: 0px;
+  
+}
+
+#SubmitDonation button {
+  width: 390px;
+  margin-bottom: 20px;
+}
+
+#SubmitDonation input {
+  font-size: 19px;
+  color: white;
+}
+
+.AmericanExpress,
+.MasterCard,
+.Visa {
+  display: inline-block;
+}
+
+
+.AmericanExpress img,
+.MasterCard img,
+.Visa img {
+  width: 50px;
+}
+
+.form-radio {
+  margin-bottom: 20px;
+
+}
+#SupportP h2 {
+  text-align: left;
 }
 

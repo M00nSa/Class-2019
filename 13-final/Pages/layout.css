@@ -130,6 +130,36 @@ footer {
     margin: auto;
 }
 
+.Formcontainer,
+.form-input {
+    width: 700px;
+}
+
+.FullName {
+    display: inline-block;
+    padding-right: 49px;
+  }
+  
+  #Name,
+  #LastName,
+  #City,
+  #State,
+  #ZipCode,
+  #Phone,
+  #Year,
+  #Month,
+  #SecurityCode,
+  #State2 {
+    width: 321px;
+  }
+  
+  .FullName:last-child {
+    padding-right: 0px;
+  }
+
+  #SubmitDonation button {
+    width: 95px;
+  }
 
 }
 
@@ -179,6 +209,25 @@ footer {
 footer {
     width: 960px;
     margin: auto;
+}
+
+.form-input,
+.Formcontainer {
+    width: 864px;
+}
+
+
+#Name, 
+#LastName, 
+#City, 
+#State, 
+#ZipCode, 
+#Phone, 
+#Year, 
+#Month, 
+#SecurityCode, 
+#State2 {
+    width: 403px;
 }
 
 }
