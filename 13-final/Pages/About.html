@@ -14,29 +14,25 @@
           
             
 
-            <div class="navbar">
-                <div class="Logo1">
-                    <img src="../Pictures/logow.png" alt="Logo"/>
-                </div>
-                <div id="Sidebar">
-                    <div class="togglebtn" onclick="togglesidebar()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul>
-                        <li class="Hover"><a href="index.html">Home</a></li>  
-                        <li class="active_page Hover"><a href="">About</a></li>
-                        <li class="Hover"><a href="Support.html">Support</a></li>
-                        <li class="Hover"><a href="Blog.html">Blog</a></li>
-    
-                    </ul>
-                </div>
-            </div>
+           
 
 
 
            
+            <div class="topnav" id="myTopnav">
+                    <div class="Logo1">
+                            <img src="../Pictures/logow.png" alt="Logo"/>
+                        </div>
+                    <ul>
+                            <li class="Hover"><a href="index.html">Home</a></li>  
+                            <li class="active_page Hover active"><a href="">About</a></li>
+                        <li class="Hover"><a href="Support.html">Support</a></li>
+                        <li class="Hover"><a href="Blog.html">Blog</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
             
                          
             
@@ -164,17 +160,19 @@
                         
             
                 <script>
-                    
-            
-                function togglesidebar(){
-                    document.getElementById('Sidebar').classlist.toggle('active')
-                }
-            
-            
-            
-            
-            
-                </script>
+                        
+                      
+                        function myFunction() {
+                          var x = document.getElementById("myTopnav");
+                          if (x.className === "topnav") {
+                            x.className += " responsive";
+                          } else {
+                            x.className = "topnav";
+                          }
+                        }
+                   
+                          
+                              </script>
 
             
 
