@@ -20,7 +20,7 @@
     display: none;
 }
 
-h1 {
+.Firstpageopt h1 {
     display: none;
 }
 
@@ -54,7 +54,14 @@ h1 {
         width: 100%;
     }
 
+    .section {
+        height: 309px;
+        background-position: 564px -33px;
+    }
 
+    .Pageoneh1 h1 {
+        display: none;
+    }
    
 }
 /*************MEDIUM SCREENS*******************/
@@ -161,6 +168,38 @@ footer {
     width: 95px;
   }
 
+  .AboutDonation p {
+    margin: 38px 0px 0px; 
+}
+
+.topnav ul {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 99px;
+    left: 349px;
+}
+
+.topnav a {
+font-size: 18px;
+}
+
+.SecP {
+    font-size: 22px;
+}
+.header1 h1 {
+    top: 223px;
+    font-size: 33px;
+}
+.overlay {
+   height: 316px;
+   width:  760px;
+}
+
+.background {
+    height: 316px;
+    background-position: 16px -13px;
+}
 }
 
 /*************LARGE SCREENS*******************/
@@ -229,5 +268,13 @@ footer {
 #State2 {
     width: 403px;
 }
+
+.SecP h2 {
+    font-size: 32px;
+}
+
+.SecPartoP {
+    display: block;
+  }
 
 }
