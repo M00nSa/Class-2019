@@ -849,4 +849,44 @@ text-decoration: none;
   margin: 66px 0px;
 }
 
- 
+
+.Dropdown-Content:hover {
+  background-color: rgba(94, 45, 61, 0.692);
+}
+
+ .Dropdown-Content {
+   display: none;
+   position: absolute;
+   min-width: 200px;
+   background-color: rgba(233, 30, 98, 0.692);
+
+ }
+
+ .Dropdown:hover .Dropdown-Content{
+   display: block;
+ }
+
+ .Dropdown {
+  position: relative;
+ }
+#myP {
+  border: 7px dotted #5dca62;
+    border-radius: 5px;
+    padding: 20px;
+    width: 212px;
+    text-align: center;
+    float: right;
+  }
+
+  .FirstWord {
+    font-size: 27px;
+    font-family: serif;
+  }
+
+  #SubmitDonation button {
+    float: left;
+  }
+
+  .padding #myP {
+  width: 190px;
+  }
