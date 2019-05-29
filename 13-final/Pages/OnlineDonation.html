@@ -326,15 +326,23 @@
                         </div>
                         </fieldset>
             
-                <div class="AboutP" id="SubmitDonation">
-                    <button>Submit</button>
-                </div>
+                        <div class="AboutP" id="SubmitDonation">
+                            <button id="b2" onclick="revealMessage()">Submit</button>
+                            <div id="hiddenMessage" style="display:none">
+                                <p id="myP">Thanks! Your donation has been processed. 100% of your money will be used to bring happiness for the children in need.</p>
+                            </div>
+                    
+                        </div>
+
+
+                
+                   
+
+
                     </form> 
                 </div>
 
-            
-           
-           
+                
             </main>
 
 
@@ -357,12 +365,16 @@
                           }
                         }
                    
-                    $('#SubmitDonation button').click(function(){
-                        alert("Thanks user! Your donation has been processed. 100% of your money will be used to bring happiness for the children in need.");
-                    });
+                    // $('#SubmitDonation button').click(function(){
+                    //     alert("Thanks user! Your donation has been processed. 100% of your money will be used to bring happiness for the children in need.");
+                    // });
             
             
-            
+                   
+                    function revealMessage(){
+                    document.getElementById ("hiddenMessage").style.display = "block";
+                }
+
             
                 </script>
 
