@@ -24,6 +24,11 @@
     display: none;
 }
 
+.height,
+.form {
+    margin: auto;
+}
+
 /*************SMALL SCREENS********************/
 @media (min-width: 414px){
     .superdiv {
@@ -139,7 +144,7 @@ footer {
 
 .Formcontainer,
 .form-input {
-    width: 700px;
+    width: 397px;
 }
 
 .FullName {
@@ -304,7 +309,7 @@ footer {
 
 .form-input,
 .Formcontainer {
-    width: 864px;
+    width: 522px;
 }
 
 
