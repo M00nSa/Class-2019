@@ -16,18 +16,12 @@
     display: none;
 }
 
-.SuperContainer {
-    display: none;
-}
+
 
 .Firstpageopt h1 {
     display: none;
 }
 
-.height,
-.form {
-    margin: auto;
-}
 
 /*************SMALL SCREENS********************/
 @media (min-width: 414px){
@@ -178,11 +172,8 @@ footer {
 }
 
 .topnav ul {
-   
-    height: 50px;
-    position: absolute;
-    top: 60px;
-    left: 256px;
+    padding-top: 134px;
+    flex-direction: row;
 }
 
 .topnav a {
@@ -193,8 +184,9 @@ font-size: 18px;
     font-size: 22px;
 }
 .header1 h1 {
-    top: 223px;
-    font-size: 33px;
+    line-height: 43px;
+    padding: 113px 0px;
+    font-size: 28px;
 }
 .overlay {
    height: 316px;
@@ -237,15 +229,16 @@ font-size: 18px;
 
 
 
-/*  */
+  
 
-/* .tel p {
+
+ .tel p {
     font-size: 22px;
 }
 
 #If2 {
     width: 300px;
-    height: 396px;
+    height: 225px;
 }
 
 .padding {
@@ -254,7 +247,18 @@ font-size: 18px;
 
 .form-input {
     width: 300px;
-} */
+} 
+
+.Hover {
+    padding-right: 12px;
+}
+.Logo1 img {
+    width: 160px;
+}
+
+#SupportP p {
+    font-size: 17px;
+}
 
 
 }
@@ -291,10 +295,7 @@ font-size: 18px;
     .large-width-100 {
         width: 100%;
     }
-    
-.Logo1 img {
-    width: 140px;
-}
+
 
 .mainimg img {
     width: 960px;
@@ -334,9 +335,7 @@ footer {
     display: block;
   }
 
-  .topnav {
-    height: 182px;
-}
+  
 
 .topnav ul {
     top: 100px;
@@ -360,12 +359,18 @@ footer {
     height: 497px;
 }
 
-.header1 h1 {
-    top: 295px;
-}
 
 .AboutBlog {
     width: 250px;
+}
+
+.header1 h1 {
+    padding: 173px 70px;
+    font-size: 30px;
+}
+
+#SupportP p {
+    font-size: 20px;
 }
 
 }

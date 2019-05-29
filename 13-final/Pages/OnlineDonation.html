@@ -356,20 +356,15 @@
                 <script>
                     
             
-                    function myFunction() {
-                          var x = document.getElementById("myTopnav");
-                          if (x.className === "topnav") {
-                            x.className += " responsive";
-                          } else {
-                            x.className = "topnav";
-                          }
-                        }
+           
+
+
                    
-                    // $('#SubmitDonation button').click(function(){
-                    //     alert("Thanks user! Your donation has been processed. 100% of your money will be used to bring happiness for the children in need.");
-                    // });
+
             
-            
+                    $('form').submit(function(event){
+                        event.preventDefault();
+                    });
                    
                     function revealMessage(){
                     document.getElementById ("hiddenMessage").style.display = "block";

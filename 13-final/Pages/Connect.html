@@ -52,8 +52,8 @@
                             <div class="tel">
                                 <p> Tel. 310-479-7455  </p>
                             </div>
-                            <h3>Email: inforeadingtokids.org</h3>
-                            <h4>1600 Sawtelle Boulevard, Suite 210 Los Angeles, California 90025 </h4>
+                            <p>Email: inforeadingtokids.org</p>
+                            <p>1600 Sawtelle Boulevard, Suite 210 Los Angeles, California 90025 </p>
                            
                            
 
@@ -65,13 +65,13 @@
 
 
                 <div class="floater-section med-width-50 height">
-                    <div class="content">
+                    <div class="content Direction">
 
         
         
                         <iframe id="If2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8718477085927!2d-118.45077108432386!3d34.04715828060737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb707e5ceedf%3A0xcfe96e1cf4605434!2sReading+To+Kids!5e0!3m2!1sen!2sus!4v1559090926167!5m2!1sen!2sus"  frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                        <a href="https://www.google.com/maps/place/Coffee+Tomo/@34.0396115,-118.4430877,18.77z/data=!4m5!3m4!1s0x80c2bb74d91769f9:0x1ec2936e1f755990!8m2!3d34.0394484!4d-118.4428443"></a><input type="submit" value="Directions" class="submitbutton" id="Direction">
+                        <button>Directions</button>
 
 
                     </div>
@@ -80,19 +80,26 @@
             <div class="floater-section med-width-50 form">
                 <div class="content padding">
                     <form action="create-process.php" method="POST"> 
-                        <label for="Fullname"> Your Name (required)</label>
-                        <input type="text" name="Fullname" class="form-input" id="Fullname"
-                        placeholder="me">
+                        <label for="Fullname">Name<sup class="star">*</sup></label>
+                        <input type="text" name="Fullname" class="form-input" id="Fullname">
                     
 
-                        <label for="userEmail">Your E-mail (required)</label>
-                        <input type="email" name="emailaddress" class="form-input" id="userEmail"
-                        placeholder="me@site.com">
+                        <label for="userEmail">E-mail<sup class="star">*</sup></label>
+                        <input type="email" name="emailaddress" class="form-input" id="userEmail">
 
-                        <label for="Message">Your Message (required)</label>
+                        <label for="Message">Message<sup class="star">*</sup></label>
                         <input type="Message" name="Message" class="form-input" id="Message"> 
 
-                        <input type="submit" value="Send" class="submitbutton" id="Sendmsg" onclick="alert('We appreciate you contacting us We will get back to you shortly! Have a great day!') ">
+                        
+                        <div class="AboutP" id="SubmitDonation">
+                                <button id="b2" onclick="revealMessage()">Submit</button>
+                                <div id="hiddenMessage" style="display:none">
+                                    <p id="myP">We appreciate you contacting us We will get back to you shortly! Have a great day!</p>
+                                </div>
+                        
+                            </div>
+                        
+                        
 
                     </form>
                 </div>
@@ -123,20 +130,21 @@
                 
                             
                 
-            <script>
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script>
                         
-                      
-              function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                  x.className += " responsive";
-                } else {
-                  x.className = "topnav";
-                }
-              }
-         
-                
-            </script>
+                     
+
+
+                      $('form').submit(function(event){
+                        event.preventDefault();
+                        });
+
+                      function revealMessage(){
+                        document.getElementById ("hiddenMessage").style.display = "block";
+                      }
+            
+                    </script>
 
             
 

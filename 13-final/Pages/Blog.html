@@ -53,7 +53,7 @@
 
                 <div class="Blogdiv">
 
-
+                        <div class="clearfix"></div>
                     <div class="floater-section small-width-100  med-width-75 AboutStory">
 
                         <div class="content2 content3">
@@ -90,7 +90,7 @@
 
                         <div class="content2 content3">
                             <div class="img-container">
-                                <img src="../Pictures/blog3.jpeg" alt="PhillipsAcademyAndoverLAAlumni">
+                                <img src="../Pictures/blog3.jpg" alt="PhillipsAcademyAndoverLAAlumni">
                             </div>
                     
                             <div class="AboutP">
@@ -101,9 +101,9 @@
                     </div>
                 </div>
 
+                
 
-
-
+            <div class="ArchiveContainer">
                 <div class="floater-section small-width-100 med-width-25 AboutStory" id="Archive">
 
                         <div class="content2 content3">
@@ -121,11 +121,12 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                </div>
+            </div>
 
             </main>
 
-
+            <div class="clearfix"></div>
                 
             
                        
@@ -133,20 +134,12 @@
             
                         
             
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                 <script>
-                        
-                      
-                        function myFunction() {
-                          var x = document.getElementById("myTopnav");
-                          if (x.className === "topnav") {
-                            x.className += " responsive";
-                          } else {
-                            x.className = "topnav";
-                          }
-                        }
-                   
-                          
-                              </script>
+                    
+                  $("#myTopnav").toggleClass('responsive');
+        
+                </script>
 
             
 
