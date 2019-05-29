@@ -68,7 +68,7 @@ body {
 .Eventpic img {
   width: 48%;
   float: left;
- 
+  padding-top: 74px;
 }
 
 .Eventtext,
@@ -236,7 +236,7 @@ background-color: #c23062;
 }
 
 .content{
-  min-height: 175px;
+  min-height: 226px;
   text-align: center;
 }
 
@@ -289,10 +289,10 @@ background-color: #c23062;
 
 section {
   width: 100%;
-  height: 175px;
   background: url(../Pictures/pic2.jpg);
   background-size: cover;
   position: relative;
+  height: 226px;
 }
 
 .Overlay {
@@ -339,7 +339,8 @@ section {
 
 main h2 {
   text-align: center;
-  margin: 30px 0px;
+  margin: 0px;
+  padding-bottom: 10px;
 }
 
 .AboutP p::first-letter,
@@ -422,7 +423,7 @@ h1{
 }
 
 h2{
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .SupportH1 h1{
