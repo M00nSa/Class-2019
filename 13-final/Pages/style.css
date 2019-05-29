@@ -832,3 +832,21 @@ text-decoration: none;
   font-size: 18px;
   margin: 20px;
  }
+
+ .Pageoneh1 h1 {
+   border: none;
+ }
+
+ .tel span {
+   font-weight: bold;
+   font-family: serif;
+ }
+
+ .tel p {
+  padding: 0px 149px;
+}
+.tel {
+  margin: 66px 0px;
+}
+
+ 
