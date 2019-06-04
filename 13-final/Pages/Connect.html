@@ -34,9 +34,9 @@
                             About Us</a>
                             <span class="submenu-toggle">></span>
                             <ul class="submenu">
-                                <li><a href="">Mission</a></li>
-                                <li><a href="">Our Story</a></li>
-                                <li><a href="">Reading Clubs</a></li>
+                                <li><a href="About.html">Mission</a></li>
+                                <li><a href="About.html">Our Story</a></li>
+                                <li><a href="ReadingClub.html">Reading Clubs</a></li>
                                 <li><a href="">Schools</a></li>
                                 <li><a href="">Statistics</a></li>
                                 <li><a href="">Testimonials</a></li>
@@ -50,7 +50,7 @@
                         Support</a>
                             <span class="submenu-toggle">></span>
                             <ul class="submenu">
-                                <li><a href="">Donate Online</a></li>
+                                <li><a href="OnlineDonation.html">Donate Online</a></li>
                                 <li><a href="">Volunteer</a></li>
                             </ul>
                         </li>
@@ -58,7 +58,7 @@
                             Blog</a>
                             <span class="submenu-toggle">></span>
                             <ul class="submenu">
-                                <li><a href="">Archieve</a></li>
+                                <li><a href="Blog.html">Archieve</a></li>
                                 <li><a href="">News</a></li>
                             </ul>
                         </li>
@@ -78,116 +78,93 @@
            
 
                 <div class="h1">
-                   
-                        <h1> CONTACT</h1>
+                    <h1> CONTACT</h1>
                 </div>
 
                
                 
                 <div class="AboutP" id="SubmitDonation">
                        
-                        <div id="hiddenMessage" style="display:none">
-                            <p id="myP">Thanks! We appreciate you contacting us We will get back to you shortly!</p>
-                        </div>
-                
+                    <div id="hiddenMessage" style="display:none">
+                        <p id="myP">Thanks! We appreciate you contacting us We will get back to you shortly!</p>
                     </div>
+                </div>
 
 
            
-                        <div class="Mainpart">
-           
-                            
-                           
-                           
-                            <div class="tel floater-section med-width-50">
-                                <div class="Connectp">
-                                    <h2>Have some questions?</h2>
-                                    <p>We'd love to hear your feedback and answer your questions.</p>
-                                </div>
+                    <div class="Mainpart">
+                        <div class="tel floater-section med-width-50">
+                            <div class="Connectp">
+                                <h2>Have some questions?</h2>
+                                <p>We'd love to hear your feedback and answer your questions.</p>
+                            </div>
                                 <p> <span>Tel:</span> 310-479-7455  </p>
                                 <div id="address">
                                     <p><span>Address:</span></p><p> 1600 Sawtelle Boulevard,</p> <p>Suite 210</p> <p>Los Angeles,</p> <p>CA 90025 </p>
                                 </div>
-                            </div>
-
-
-                <div class="floater-section custom-width ">
-                    <div class="img-container">
-                        <img src="../Pictures/gif.gif" alt="ReadingClub">
-                    </div>
-                </div>
-            
-                           
-
-
                         </div>
+
+
+                        <div class="floater-section custom-width ">
+                            <div class="img-container">
+                                <img src="../Pictures/gif.gif" alt="ReadingClub">
+                            </div>
+                        </div>
+                    </div>
                             
                 
-                <div class="clearfix"></div>
-        <div class="Connectdiv">
-               
+                    <div class="clearfix"></div>
 
-                <div class="floater-section med-width-50 height BTN">
-                    <div class="content Direction">
-                        <iframe id="If2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8718477085927!2d-118.45077108432386!3d34.04715828060737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb707e5ceedf%3A0xcfe96e1cf4605434!2sReading+To+Kids!5e0!3m2!1sen!2sus!4v1559090926167!5m2!1sen!2sus"  frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <div class="AboutP Connectbtn" id="SubmitDonation">
-                        <button>Directions</button>
+                    <div class="Connectdiv">
+                        <div class="floater-section med-width-50 height BTN">
+                            <div class="content Direction">
+                                <iframe id="If2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8718477085927!2d-118.45077108432386!3d34.04715828060737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb707e5ceedf%3A0xcfe96e1cf4605434!2sReading+To+Kids!5e0!3m2!1sen!2sus!4v1559090926167!5m2!1sen!2sus"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <div class="AboutP Connectbtn" id="SubmitDonation">
+                                <button>Directions</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <div class="floater-section med-width-50 form BTN">
+                        <div class="content padding">
+                            <form action="create-process.php" method="POST"> 
+                                <label for="Fullname">Name<sup class="star">*</sup></label>
+                                <input type="text" name="Fullname" class="form-input" id="Fullname">
+                            
+
+                                <label for="userEmail">E-mail<sup class="star">*</sup></label>
+                                <input type="email" name="emailaddress" class="form-input" id="userEmail">
+
+                                <label for="Message">Message<sup class="star">*</sup></label>
+                                <textarea rows="4" cols="50" class="form-input"> </textarea>
+                                <div class="AboutP Connectbtn" id="SubmitDonation">
+                                    <button id="b2" onclick="revealMessage()">Submit</button>
+                                </div> 
+                            </form>
                         </div>
                     </div>
-                </div>
 
-
-
-            <div class="floater-section med-width-50 form BTN">
-                <div class="content padding">
-                    <form action="create-process.php" method="POST"> 
-                        <label for="Fullname">Name<sup class="star">*</sup></label>
-                        <input type="text" name="Fullname" class="form-input" id="Fullname">
-                    
-
-                        <label for="userEmail">E-mail<sup class="star">*</sup></label>
-                        <input type="email" name="emailaddress" class="form-input" id="userEmail">
-
-                        <label for="Message">Message<sup class="star">*</sup></label>
-                        <textarea rows="4" cols="50" class="form-input"> </textarea>
-                        <div class="AboutP Connectbtn" id="SubmitDonation">
-                                <button id="b2" onclick="revealMessage()">Submit</button>
-                        </div> 
-                    </form>
-                </div>
             </div>
-
-        </div>
 
                       
             <div class="clearfix"></div>
 
-
-
-
-    
-            
-
-    </div>
-                         
-       
-
-           
-                </main>
+        </div>
+                
 
 
                    
                 
                         
-                    </div>
+        </div>
                 
                             
                 
                     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                     <script>
                         
-                     
-
 
                       $('form').submit(function(event){
                         event.preventDefault();
@@ -208,9 +185,6 @@
                         $('.submenu-toggle').click(function(){
                             $(this).siblings('.submenu').toggleClass('open');
                         });
-
-                    
-
                         });
             
                     </script>

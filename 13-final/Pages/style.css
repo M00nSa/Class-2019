@@ -1239,3 +1239,6 @@ ul li {
   width: 362px;
   margin: auto;
 }
+#DonationBtn button {
+  margin: 20px auto;
+}
