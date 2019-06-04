@@ -15,22 +15,61 @@
           
             
 
-                <div class="topnav" id="myTopnav">
-                    <div class="Logo1">
-                        <img src="../Pictures/logow.png" alt="Logo"/>
+            <header>
+                <div class="nav-controller">
+                    <img class="logo" src="../Pictures/logow.png">
+        
+                    <div class="nav-toggle">
+                        <div class="menu"> 
+                            <div class="hamburgerIcon"> </div>
+                        </div>
+                        
+                    
                     </div>
-
-                    <ul>
-                        <li class="Hover"><a href="index.html">Home</a></li>  
-                        <li class="Hover"><a href="About.html">About Us</a></li>
-                        <li class="Hover"><a href="Support.html">Support</a></li>
-                        <li class="Hover"><a href="Blog.html">Our Blog</a></li>
-                        <li class="Hover"><a href="Connect.html">Connect</a></li>
-                    </ul>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
                 </div>
+                <nav>
+                    <ul>
+                        <li class="Hover"><a href="index.html" >Home</a></li>
+                        <li class="Hover"><a href="About.html">
+                            About Us</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Mission</a></li>
+                                <li><a href="">Our Story</a></li>
+                                <li><a href="">Reading Clubs</a></li>
+                                <li><a href="">Schools</a></li>
+                                <li><a href="">Statistics</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Brochures</a></li>
+                                <li><a href="">Sponsors</a></li>
+                                <li><a href="">Staff</a></li>
+                                <li><a href="">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Support.html">
+                        Support</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Donate Online</a></li>
+                                <li><a href="">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Blog.html">
+                            Blog</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Archieve</a></li>
+                                <li><a href="">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Connect.html">Connect</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+            </header>
+    
+                 
 
 
            
@@ -163,19 +202,20 @@
                     
 
                         <label for="Recipient" class="UText">Please provide name/contact information for person to receive the acknowledgement</label>
-                        <input type="text" name="Recipient" class="form-input" id="Recipient">
+                        <textarea rows="4" cols="50" class="form-input" id="Recipient"> </textarea>
 
 
                         <label for="Note" class="UText" id="SNote">Special Note</label>
-                        <input type="text" name="Note" class="form-input" id="Note">
+                        <textarea rows="4" cols="50" class="form-input" id="Note"> </textarea>
+                     
                         
 
 
                         
                         <fieldset><label for="radioGroup" class="Display" id="DType">Is this a recurring or one-time donation?</label><br/>
             
-                            <input type="radio" name="status" value="yes" class="form-radio"> This is a monthly donation.<br/>
-                            <input type="radio" name="status" value="no" class="form-radio" checked> This is a one-time donation.
+                            <input type="radio" name="status" value="yes" class="form-radio" checked> This is a monthly donation.<br/>
+                            <input type="radio" name="status" value="no" class="form-radio"> This is a one-time donation.
 
                         <label for="DonationAmount" class="Display">Donation Amount<sup class="star">*</sup></label>
                         <input type="number" name="DonationAmount" class="form-input" id="DonationAmount">
@@ -325,13 +365,14 @@
                         
                         </div>
                         </fieldset>
-            
+                        <div class="AboutP" id="SubmitDonation">
+                                <div id="hiddenMessage" style="display:none">
+                                    <p id="myP"><span class="FirstWord">Thanks! </span>Your donation has been processed. 100% of your money will be used to bring happiness for the children in need.</p>
+                                </div>
+                        
+                            </div>
                         <div class="AboutP" id="SubmitDonation">
                             <button id="b2" onclick="revealMessage()">Submit</button>
-                            <div id="hiddenMessage" style="display:none">
-                                <p id="myP"><span class="FirstWord">Thanks! </span>Your donation has been processed. 100% of your money will be used to bring happiness for the children in need.</p>
-                            </div>
-                    
                         </div>
 
 
@@ -369,6 +410,22 @@
                     function revealMessage(){
                     document.getElementById ("hiddenMessage").style.display = "block";
                 }
+
+
+                // nav
+                $(document).ready(function(){
+                        $('.nav-toggle').click(function(){
+                            $('nav').toggleClass('open');
+                        });
+
+
+                        $('.submenu-toggle').click(function(){
+                            $(this).siblings('.submenu').toggleClass('open');
+                        });
+
+                    
+
+                        });
 
             
                 </script>

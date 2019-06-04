@@ -11,66 +11,80 @@
     </head>
     <body>
 
-        <div class="superdiv">
+        <div class="superdiv" >
           
           
-
-            <div class="topnav" id="myTopnav">
-                <div class="Logo1">
-                    <img src="../Pictures/logow.png" alt="Logo"/>
-                </div>
-
-                <ul>
-                    <li class="active_page Hover active"><a href="" >Home</a></li>
-                    <li class="Hover Dropdown"><a href="About.html">About Us<span class="fa fa-angle-down"></span> </a>
-                        <ul class="Dropdown-Content">
-                            <li><a href="">Mission</a></li>
-                            <li><a href="">Our Story</a></li>
-                            <li><a href="">Reading Clubs</a></li>
-                            <li><a href="">Schools</a></li>
-                            <li><a href="">Statistics</a></li>
-                            <li><a href="">Testimonials</a></li>
-                            <li><a href="">Brochures</a></li>
-                            <li><a href="">Sponsors</a></li>
-                            <li><a href="">Staff</a></li>
-                            <li><a href="">Board of Directors</a></li>
-                        </ul>
-                    </li>
-                    <li class="Hover"><a href="Support.html">Support<span class="fa fa-angle-down"></span></a> 
-                        <ul class="Dropdown-Content">
-                            <li><a href="">Donate Online</a></li>
-                            <li><a href="">Volunteer</a></li>
-                        </ul>
-                    </li>
-                    <li class="Hover"><a href="Blog.html">Our Blog<span class="fa fa-angle-down"></span></a> 
-                        <ul class="Dropdown-Content">
-                            <li><a href="">Archieve</a></li>
-                            <li><a href="">News</a></li>
-                        </ul></a></li>
-                    <li class="Hover"><a href="Connect.html">Connect</a></li>
-                </ul>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-
-           
+                <header>
+                        <div class="nav-controller">
+                            <img class="logo" src="../Pictures/logow.png">
+                
+                            <div class="nav-toggle">
+                                <div class="menu"> 
+                                    <div class="hamburgerIcon"> </div>
+                                </div>
+                                
+                            
+                            </div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li class="active_page Hover active"><a href="" >Home</a></li>
+                                <li class="Hover"><a href="About.html">
+                                    About Us</a>
+                                    <span class="submenu-toggle">></span>
+                                    <ul class="submenu">
+                                        <li><a href="">Mission</a></li>
+                                        <li><a href="">Our Story</a></li>
+                                        <li><a href="">Reading Clubs</a></li>
+                                        <li><a href="">Schools</a></li>
+                                        <li><a href="">Statistics</a></li>
+                                        <li><a href="">Testimonials</a></li>
+                                        <li><a href="">Brochures</a></li>
+                                        <li><a href="">Sponsors</a></li>
+                                        <li><a href="">Staff</a></li>
+                                        <li><a href="">Board of Directors</a></li>
+                                    </ul>
+                                </li>
+                                <li class="Hover"><a href="Support.html">
+                                Support</a>
+                                    <span class="submenu-toggle">></span>
+                                    <ul class="submenu">
+                                        <li><a href="">Donate Online</a></li>
+                                        <li><a href="">Volunteer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="Hover"><a href="Blog.html">
+                                    Blog</a>
+                                    <span class="submenu-toggle">></span>
+                                    <ul class="submenu">
+                                        <li><a href="">Archieve</a></li>
+                                        <li><a href="">News</a></li>
+                                    </ul>
+                                </li>
+                                <li class="Hover"><a href="Connect.html">Connect</a></li>
+                            
+                            </ul>
+                           
+                        </nav>
+                    </header>
             
                          
             
 
-            <div class="mainimg ">
-                <img src="../Pictures/pic1.jpg" alt="ReadingToKidsMAinPic"/>
-            </div> 
+
+            <div class="mainimg">
+                    <img id="slider" >
+            </div>
+                
+
 
             <div class="Firstpageopt">
 
                 <ul>
-                     <li class="HColor" id="Donate"><a href="Support.html">Donate</a></li>
-                    <li class="HColor"><a href="">Events</a></li>  
-                    <li class="HColor"><a href="">Log In</a></li>
-                    <li class="HColor"><a href="">Sign Up</a></li>
+                    <li class="HColor" id="Donate"><a href="Support.html">Donate</a></li>
+                    <li class="HColor"><a href="ReadingClub.html" target="_blank">Events</a></li>  
+                    <li class="HColor"><a href="" target="_blank">Log In</a></li>
+                    <li class="HColor"><a href="" target="_blank">Sign Up</a></li>
                       
                 </ul>
                 
@@ -81,22 +95,23 @@
             </div>
             <main>
                 <div class="SuperContainer">
-               
-
+           
 
                     <div class="floater-section med-width-100 Container1">
                         
                         <div class="box">
                             <div class="Eventpic">
                                 <img src="../Pictures/eventpic1.jpg" alt="Eventpic">
+                                <img src="../Pictures/eventpic2.jpg" alt="Eventpic">
                             </div>
-            
+                        
+                       
                             <div class="Eventtext">       
                                 <h2>Reading Clubs</h2>
-                                <p>The reading clubs meet the second Saturday of each month from 9:00 a.m. to 12:00 noon at seven elementary schools near downtown Los Angeles. <a href="">More Information...</a></p>
+                                <p>The reading clubs meet the second Saturday of each month from 9:00 a.m. to 12:00 noon at seven elementary schools near downtown Los Angeles. <span id="part1">First-time volunteers begin the day by participating in a training session about reading aloud to children. </span> <span id="part2">While the new volunteers are being trained, returning volunteers participate in their own training program, focusing on improving the quality of our reading clubs.</span><a href="ReadingClub.html" target="_blank"><button id="ReadingclubBtn"> More Info</button></a></p>
                             </div>
-            
                         </div>  
+                       
                         <div class="clearfix"></div>
             
                     </div> 
@@ -104,57 +119,58 @@
 
 
                     <div class="EventsBtn">
-                    <a href=""><button> More Upcomming Events</button></a>
+                    <a href="" target="_blank"><button> More Upcomming Events</button></a>
                     </div>
 
 
 
                     <div class="ImgContainer">
                     
-                        <a href="ReadingClub.html"><div class="floater-sec  small-width-100 med-width-33 Hcolor">
-                            
-                            <h3>Reading Clubs</h3>
+                        <a href="" target="_blank"><div class="floater-sec  small-width-100 med-width-33 ">
+                            <div class="Overlay" id="Solid1"> <h3>Media Resources</h3> </div>
                             <div class="content" id="Color1"></div>  
                         </div></a>
                     
             
                 
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
+                        <a href="ReadingClub.html" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
                             
                             <section>
-                                <div class="Overlay"><p>More Upcomming Events</p></div>  
+                                <div class="Overlay" id="Pic1"> <h3>Reading Clubs</h3> </div> 
+                               
                             </section>
                         </div></a>
                     
             
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
-                            <h3>Latest News</h3>
-                            <div class="content" id="Color2"></div>   
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
+                            <div class="Overlay" id="Solid2"> <h3>Supporters</h3> </div>
+                            <div class="content" ></div>   
                         </div></a>
                     
 
                         
             
                     
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
                             
                             <section id="Section1">
-                                <div class="Overlay"></div>  
+                                    <div class="Overlay" id="Pic2"> <h3>Latest News</h3> </div>
                             </section>
                         </div></a>
                             
             
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
-                            <h3>Current Needs</h3>
-                            <div class="content" id="Color3"></div>   
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
+                            
+                            <div class="Overlay" id="Solid3"> <h3>Board of Directors</h3> </div>
+                            <div class="content" ></div>   
                         </div></a>
 
 
                         
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
                             
                             <section id="Section2">
-                                <div class="Overlay"></div>  
+                                    <div class="Overlay" id="Pic3"> <h3>Current Needs</h3> </div>
                             </section>
                         </div></a>
             
@@ -162,25 +178,25 @@
                         <div class="clearfix"></div>
 
 
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
-                            <h3>Participating Schools</h3>
-                            <div class="content" id="Color4"></div>  
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
+                            <div class="Overlay" id="Solid4"> <h3>Participating Schools</h3> </div>
+                            <div class="content" ></div>  
                         </div></a>
                             
                     
                             
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33 ">
                                 
                             <section id="Section3">
-                                <div class="Overlay"></div>  
+                                    <div class="Overlay" id="Pic4"> <h3>Volunteers Experiences</h3> </div> 
                             </section>
                         </div></a>
                         
                             
                     
-                        <a href=""><div class="floater-sec small-width-100 med-width-33 Hcolor">
-                            <h3>Volunteers Experiences</h3>
-                            <div class="content" id="Color5"></div>   
+                        <a href="" target="_blank"><div class="floater-sec small-width-100 med-width-33">
+                            <div class="Overlay" id="Solid5"> <h3>Books and Crafts</h3> </div>
+                            <div class="content" ></div>   
                         </div></a>
 
 
@@ -207,10 +223,48 @@
                     <script>
                         
                       $("#myTopnav").toggleClass('responsive');
-            
-                    </script>
 
-            
+
+                    //   MainPic  //
+
+                    var imgArray = [
+                            '../Pictures/main4.jpg',
+                            '../Pictures/main1.jpg',
+                            '../Pictures/main6.jpg'],
+                            curIndex = 0;
+                            imgDuration = 6000;
+
+                        function slideShow() {
+                            document.getElementById('slider').className += "fadeOut";
+                            setTimeout(function() {
+                                document.getElementById('slider').src = imgArray[curIndex];
+                                document.getElementById('slider').className = "";
+                            },1000);
+                            curIndex++;
+                            if (curIndex == imgArray.length) { curIndex = 0; }
+                            setTimeout(slideShow, imgDuration);
+                        }
+                        slideShow();
+
+
+
+                        // nav
+                        $(document).ready(function(){
+                        $('.nav-toggle').click(function(){
+                            $('nav').toggleClass('open');
+                        });
+
+
+                        $('.submenu-toggle').click(function(){
+                            $(this).siblings('.submenu').toggleClass('open');
+                        });
+
+                    
+
+                        });
+
+      
+                    </script>
 
             
             </div>

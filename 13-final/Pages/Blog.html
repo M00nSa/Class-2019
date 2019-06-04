@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <div class="superdiv">
+        <div class="superdiv" id="Blogsuperdiv">
           
             
 
@@ -19,24 +19,61 @@
 
 
 
-           
-            <div class="topnav" id="myTopnav">
-                <div class="Logo1">
-                    <img src="../Pictures/logow.png" alt="Logo"/>
+            <header>
+                <div class="nav-controller">
+                    <img class="logo" src="../Pictures/logow.png">
+        
+                    <div class="nav-toggle">
+                        <div class="menu"> 
+                            <div class="hamburgerIcon"> </div>
+                        </div>
+                        
+                    
+                    </div>
                 </div>
-
-                <ul>
-                    <li class="Hover"><a href="index.html">Home</a></li>  
-                    <li class="Hover"><a href="About.html">About Us</a></li>
-                    <li class="Hover"><a href="Support.html">Support</a></li>
-                    <li class="active_page Hover active"><a href="">Our Blog</a></li>
-                    <li class="Hover"><a href="Connect.html">Connect</a></li>
-                </ul>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            
+                <nav>
+                    <ul>
+                        <li class="Hover"><a href="index.html" >Home</a></li>
+                        <li class="Hover"><a href="About.html">
+                            About Us</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Mission</a></li>
+                                <li><a href="">Our Story</a></li>
+                                <li><a href="">Reading Clubs</a></li>
+                                <li><a href="">Schools</a></li>
+                                <li><a href="">Statistics</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Brochures</a></li>
+                                <li><a href="">Sponsors</a></li>
+                                <li><a href="">Staff</a></li>
+                                <li><a href="">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Support.html">
+                        Support</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Donate Online</a></li>
+                                <li><a href="">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li class="active_page Hover active"><a href="">
+                            Blog</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Archieve</a></li>
+                                <li><a href="">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Connect.html">Connect</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+            </header>
+    
+                 
                          
             
 
@@ -51,17 +88,17 @@
                 <h1>Blog</h1>
                 
 
-                <div class="Blogdiv">
+                <div class="Blogdiv med-width-66 large-width-75">
 
                        
-                    <div class="floater-section small-width-100  med-width-75 AboutStory">
+                    <div class="floater-section small-width-100   AboutStory">
 
                         <div class="content2 content3">
                             <div class="img-container">
                                 <img src="../Pictures/blog1.jpg" alt="PhillipsAcademyAndoverLAAlumni">
                             </div>
             
-                            <div class="AboutP">
+                            <div class="AboutP Blog">
                                 <h2>Zinnia and the Bees at Reading to Kids</h2>
                                 <h3>February 10, 2018</h3><a href=""><button> More Info</button></a></p>
                             </div>
@@ -71,14 +108,14 @@
 
 
 
-                    <div class="floater-section small-width-100 med-width-75 AboutStory">
+                    <div class="floater-section small-width-100  AboutStory">
 
                         <div class="content2 content3">
                             <div class="img-container">
                                 <img src="../Pictures/Mainblog.jpg" alt="PhillipsAcademyAndoverLAAlumni">
                             </div>
                 
-                            <div class="AboutP">
+                            <div class="AboutP Blog">
                                 <h2>The reading event of September 10th</h2>
                                 <h3>September 15, 2016</h3><a href=""><button> More Info</button></a></p>
                             </div>
@@ -86,14 +123,14 @@
                     </div>
 
 
-                    <div class="floater-section small-width-100 med-width-75 AboutStory">
+                    <div class="floater-section small-width-100  AboutStory">
 
                         <div class="content2 content3">
                             <div class="img-container">
                                 <img src="../Pictures/blog3.jpg" alt="PhillipsAcademyAndoverLAAlumni">
                             </div>
                     
-                            <div class="AboutP">
+                            <div class="AboutP Blog">
                                 <h2>The Happiest Girl Alive by Andrea Briceno</h2>
                                 <h3>July 20, 2015</h3><a href=""><button> More Info</button></a></p>
                             </div>
@@ -103,11 +140,11 @@
 
                
 
-            <div class="ArchiveContainer">
-                <div class="floater-section small-width-100 med-width-25 AboutStory" id="Archive">
+            <div class="ArchiveContainer  med-width-25 large-width-25">
+                <div class="floater-section small-width-100  med-width-25 large-width-25 AboutStory" id="Archive">
 
                         <div class="content2 content3">
-                            <div class="AboutP AboutBlog">
+                            <div class="AboutP AboutBlog Blog" id="blog">
                                 <h2>Blog Archive</h2>
                                 <ul>
                                     <a href=""><li>2018</li></a>
@@ -138,6 +175,21 @@
                 <script>
                     
                   $("#myTopnav").toggleClass('responsive');
+
+                  // nav
+                  $(document).ready(function(){
+                        $('.nav-toggle').click(function(){
+                            $('nav').toggleClass('open');
+                        });
+
+
+                        $('.submenu-toggle').click(function(){
+                            $(this).siblings('.submenu').toggleClass('open');
+                        });
+
+                    
+
+                        });
         
                 </script>
 

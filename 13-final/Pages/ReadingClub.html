@@ -15,24 +15,61 @@
           
             
 
-            <div class="topnav" id="myTopnav">
-                <div class="Logo1">
-                    <img src="../Pictures/logow.png" alt="Logo"/>
+            <header>
+                <div class="nav-controller">
+                    <img class="logo" src="../Pictures/logow.png">
+        
+                    <div class="nav-toggle">
+                        <div class="menu"> 
+                            <div class="hamburgerIcon"> </div>
+                        </div>
+                        
+                    
+                    </div>
                 </div>
-        
-                <ul>
-                    <li class="active_page Hover active"><a href="index.html" >Home</a></li>
-                    <li class="Hover"><a href="About.html">About Us</a></li>
-                    <li class="Hover"><a href="Support.html">Support</a></li>
-                    <li class="Hover"><a href="Blog.html">Our Blog</a></li>
-                    <li class="Hover"><a href="Connect.html">Connect</a></li>
-                </ul>
-        
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-
+                <nav>
+                    <ul>
+                        <li class="Hover"><a href="index.html" >Home</a></li>
+                        <li class="Hover"><a href="About.html">
+                            About Us</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Mission</a></li>
+                                <li><a href="">Our Story</a></li>
+                                <li><a href="">Reading Clubs</a></li>
+                                <li><a href="">Schools</a></li>
+                                <li><a href="">Statistics</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Brochures</a></li>
+                                <li><a href="">Sponsors</a></li>
+                                <li><a href="">Staff</a></li>
+                                <li><a href="">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Support.html">
+                        Support</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Donate Online</a></li>
+                                <li><a href="">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Blog.html">
+                            Blog</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Archieve</a></li>
+                                <li><a href="">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Connect.html">Connect</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+            </header>
+    
+                 
 
 
            
@@ -95,12 +132,14 @@
 
                     <div class="clearfix"></div>
 
+                    
+                    <div class="RCiframe">
                     <div class="RCh2">
                     <h2>what to expect at your first reading club</h2>
                     </div>
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2H7faKIcdHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
+                    <iframe src="https://www.youtube.com/embed/2H7faKIcdHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                    
 
            
@@ -116,6 +155,21 @@
                 <script>
                     
                   $("#myTopnav").toggleClass('responsive');
+
+                  // nav
+                  $(document).ready(function(){
+                        $('.nav-toggle').click(function(){
+                            $('nav').toggleClass('open');
+                        });
+
+
+                        $('.submenu-toggle').click(function(){
+                            $(this).siblings('.submenu').toggleClass('open');
+                        });
+
+                    
+
+                        });
         
                 </script>
             

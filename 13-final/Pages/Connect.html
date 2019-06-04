@@ -11,73 +11,134 @@
     </head>
     <body>
 
-        <div class="superdiv">
+        <div class="superdiv contact">
           
           
 
-            <div class="topnav" id="myTopnav">
-                <div class="Logo1">
-                    <img src="../Pictures/logow.png" alt="Logo"/>
+            <header>
+                <div class="nav-controller">
+                    <img class="logo" src="../Pictures/logow.png">
+        
+                    <div class="nav-toggle">
+                        <div class="menu"> 
+                            <div class="hamburgerIcon"> </div>
+                        </div>
+                        
+                    
+                    </div>
                 </div>
-
-                <ul>
-                    <li class="Hover"><a href="index.html" >Home</a></li>
-                    <li class="Hover"><a href="About.html">About Us</a></li>
-                    <li class="Hover"><a href="Support.html">Support</a></li>
-                    <li class="Hover"><a href="Blog.html">Our Blog</a></li>
-                    <li class="active_page Hover active"><a href="">Connect</a></li>
-                </ul>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-
+                <nav>
+                    <ul>
+                        <li class="Hover"><a href="index.html" >Home</a></li>
+                        <li class="Hover"><a href="About.html">
+                            About Us</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Mission</a></li>
+                                <li><a href="">Our Story</a></li>
+                                <li><a href="">Reading Clubs</a></li>
+                                <li><a href="">Schools</a></li>
+                                <li><a href="">Statistics</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Brochures</a></li>
+                                <li><a href="">Sponsors</a></li>
+                                <li><a href="">Staff</a></li>
+                                <li><a href="">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Support.html">
+                        Support</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Donate Online</a></li>
+                                <li><a href="">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Blog.html">
+                            Blog</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Archieve</a></li>
+                                <li><a href="">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="active_page Hover active"><a href="">Connect</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+            </header>
+    
+                 
+            <div class="mainimg ">
+                <img src="../Pictures/main3.jpeg" alt="ReadingToKidsMAinPic"/>
+            </div> 
            
             <div class="maincontainer main">
            
 
                 <div class="h1">
+                   
                         <h1> CONTACT</h1>
                 </div>
 
+               
+                
+                <div class="AboutP" id="SubmitDonation">
+                       
+                        <div id="hiddenMessage" style="display:none">
+                            <p id="myP">Thanks! We appreciate you contacting us We will get back to you shortly!</p>
+                        </div>
+                
+                    </div>
 
 
-                <div class="floater-section med-width-100 ">
-                        <div class="content">
+           
+                        <div class="Mainpart">
            
                             
                            
                            
-                            <div class="tel">
+                            <div class="tel floater-section med-width-50">
+                                <div class="Connectp">
+                                    <h2>Have some questions?</h2>
+                                    <p>We'd love to hear your feedback and answer your questions.</p>
+                                </div>
                                 <p> <span>Tel:</span> 310-479-7455  </p>
-                            
-                            <p><span>Email:</span> inforeadingtokids.org</p>
-                            <p><span>Address:</span> 1600 Sawtelle Boulevard, Suite 210 Los Angeles, California 90025 </p>
-                        </div>
+                                <div id="address">
+                                    <p><span>Address:</span></p><p> 1600 Sawtelle Boulevard,</p> <p>Suite 210</p> <p>Los Angeles,</p> <p>CA 90025 </p>
+                                </div>
+                            </div>
+
+
+                <div class="floater-section custom-width ">
+                    <div class="img-container">
+                        <img src="../Pictures/gif.gif" alt="ReadingClub">
+                    </div>
+                </div>
+            
                            
 
 
                         </div>
                             
-                </div>
+                
+                <div class="clearfix"></div>
+        <div class="Connectdiv">
+               
 
-
-
-                <div class="floater-section med-width-50 height">
+                <div class="floater-section med-width-50 height BTN">
                     <div class="content Direction">
-
-        
-        
                         <iframe id="If2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8718477085927!2d-118.45077108432386!3d34.04715828060737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb707e5ceedf%3A0xcfe96e1cf4605434!2sReading+To+Kids!5e0!3m2!1sen!2sus!4v1559090926167!5m2!1sen!2sus"  frameborder="0" style="border:0" allowfullscreen></iframe>
-
+                        <div class="AboutP Connectbtn" id="SubmitDonation">
                         <button>Directions</button>
-
-
+                        </div>
                     </div>
                 </div>
 
-            <div class="floater-section med-width-50 form">
+
+
+            <div class="floater-section med-width-50 form BTN">
                 <div class="content padding">
                     <form action="create-process.php" method="POST"> 
                         <label for="Fullname">Name<sup class="star">*</sup></label>
@@ -88,23 +149,15 @@
                         <input type="email" name="emailaddress" class="form-input" id="userEmail">
 
                         <label for="Message">Message<sup class="star">*</sup></label>
-                        <input type="Message" name="Message" class="form-input" id="Message"> 
-
-                        
-                        <div class="AboutP" id="SubmitDonation">
+                        <textarea rows="4" cols="50" class="form-input"> </textarea>
+                        <div class="AboutP Connectbtn" id="SubmitDonation">
                                 <button id="b2" onclick="revealMessage()">Submit</button>
-                                <div id="hiddenMessage" style="display:none">
-                                    <p id="myP">We appreciate you contacting us We will get back to you shortly! Have a great day!</p>
-                                </div>
-                        
-                            </div>
-                        
-                        
-
+                        </div> 
                     </form>
                 </div>
             </div>
 
+        </div>
 
                       
             <div class="clearfix"></div>
@@ -143,6 +196,22 @@
                       function revealMessage(){
                         document.getElementById ("hiddenMessage").style.display = "block";
                       }
+
+
+                      // nav
+                      $(document).ready(function(){
+                        $('.nav-toggle').click(function(){
+                            $('nav').toggleClass('open');
+                        });
+
+
+                        $('.submenu-toggle').click(function(){
+                            $(this).siblings('.submenu').toggleClass('open');
+                        });
+
+                    
+
+                        });
             
                     </script>
 

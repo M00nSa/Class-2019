@@ -11,27 +11,64 @@
     </head>
     <body>
 
-        <div class="superdiv">
+        <div class="superdiv" >
           
            
-            <div class="topnav" id="myTopnav">
-                <div class="Logo1">
-                    <img src="../Pictures/logow.png" alt="Logo"/>
+            <header>
+                <div class="nav-controller">
+                    <img class="logo" src="../Pictures/logow.png">
+        
+                    <div class="nav-toggle">
+                        <div class="menu"> 
+                            <div class="hamburgerIcon"> </div>
+                        </div>
+                        
+                    
+                    </div>
                 </div>
-
-                <ul>
-                    <li class="Hover"><a href="index.html">Home</a></li>  
-                    <li class="active_page Hover active"><a href="">About Us</a></li>
-                    <li class="Hover"><a href="Support.html">Support</a></li>
-                    <li class="Hover"><a href="Blog.html">Our Blog</a></li>
-                    <li class="Hover"><a href="Connect.html">Connect</a></li>
-                </ul>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            
+                <nav>
+                    <ul>
+                        <li class="Hover"><a href="index.html" >Home</a></li>
+                        <li class="active_page Hover active"><a href="">
+                            About Us</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Mission</a></li>
+                                <li><a href="">Our Story</a></li>
+                                <li><a href="">Reading Clubs</a></li>
+                                <li><a href="">Schools</a></li>
+                                <li><a href="">Statistics</a></li>
+                                <li><a href="">Testimonials</a></li>
+                                <li><a href="">Brochures</a></li>
+                                <li><a href="">Sponsors</a></li>
+                                <li><a href="">Staff</a></li>
+                                <li><a href="">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Support.html">
+                        Support</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Donate Online</a></li>
+                                <li><a href="">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Blog.html">
+                            Blog</a>
+                            <span class="submenu-toggle">></span>
+                            <ul class="submenu">
+                                <li><a href="">Archieve</a></li>
+                                <li><a href="">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="Hover"><a href="Connect.html">Connect</a></li>
+                    
+                    </ul>
+                   
+                </nav>
+            </header>
+    
+                 
                          
             
 
@@ -47,13 +84,9 @@
             <main>
             
                
-                <div class="Header">
-                    <h1>About </h1>
-                </div> 
-
-               
+                <div class="Header2">
                 <h2>Our Mission</h2>  
-
+                </div>
 
 
                 <div class="floater-section med-width-50 AboutStory">
@@ -63,7 +96,7 @@
                             <img src="../Pictures/mission.jpg" alt="ReadingtoKidsMission">
                         </div>
         
-                        <div class="AboutP">
+                        <div class="AboutP Aboutpage">
                             <h3>Organization and Goals </h3>
                             <p>Reading to Kids is a grassroots organization dedicated to inspiring underserved children with a love of reading, thereby enriching their lives and opportunities for success in the future.  To this end, Reading to Kids gathers on average 601 children and 322 volunteers at reading clubs on the second Saturday of every month at eight Los Angeles elementary schools.<a href="" target="_blank"><button> More Info</button></a></p>
                         </div>
@@ -79,7 +112,7 @@
                             <img src="../Pictures/ReadingClub.png" alt="ReadingClub">
                         </div>
         
-                        <div class="AboutP">
+                        <div class="AboutP Aboutpage">
                             <h3>Reading Clubs </h3>
                             <p> At the monthly reading clubs, pairs of volunteers read aloud to small groups of children, while their parents receive training on how to encourage their children to read at home.  Kids, parents, teachers, and school libraries receive book donations at the end of the reading clubs.  These are important donations, as 60 percent of low-income homes do not have age-appropriate reading materials for children.<a href="ReadingClub.html" target="_blank"><button> More Info</button></a></p>
                         </div>
@@ -135,9 +168,9 @@
 
                         <div class="content2 Storydiv">
                                 
-                            <div class="SecP">
+                            <div class="SecP Story">
                                 <h2> Our Story</h2>
-                                <p> Reading to Kids began with a small group of volunteers, teachers, and administrators who shared the same dream: to improve reading skills among the elementary school children of Los Angeles.</p><p>In May 1999, a program was developed at Gratts Elementary School that would emphasize learning and reading in an interactive and fun environment. It was called the "Gratts Reading Club." This first reading club was held in May 1999. The success and growth of that reading club led to the formation of Reading to Kids later that year.The success of Reading to Kids is due to the Reading Club format--reading aloud to children consistently. <div class="SecPartoP">  From a start of only 8 volunteers reading to 20 children at one school, Reading to Kids has grown to an average of 322 volunteers reading to an average of 601 children at eight schools every month. With the help of a solid base of outside organizations that act as supporters through providing volunteers and in-kind donations, the growth continues.</div><a href="" target="_blank"><button> Continue..</button></a> </p>
+                                <p> Reading to Kids began with a small group of volunteers, teachers, and administrators who shared the same dream: to improve reading skills among the elementary school children of Los Angeles.</p><p>In May 1999, a program was developed at Gratts Elementary School that would emphasize learning and reading in an interactive and fun environment. It was called the "Gratts Reading Club." This first reading club was held in May 1999. The success and growth of that reading club led to the formation of Reading to Kids later that year.The success of Reading to Kids is due to the Reading Club format--reading aloud to children consistently. <div class="SecPartoP">  From a start of only 8 volunteers reading to 20 children at one school, Reading to Kids has grown to an average of 322 volunteers reading to an average of 601 children at eight schools every month.</div><a href="" target="_blank"><button> Continue..</button></a> </p>
                             </div>           
                                                     
                         </div>
@@ -159,6 +192,21 @@
             <script>
                 
               $("#myTopnav").toggleClass('responsive');
+
+              // nav
+              $(document).ready(function(){
+                        $('.nav-toggle').click(function(){
+                            $('nav').toggleClass('open');
+                        });
+
+
+                        $('.submenu-toggle').click(function(){
+                            $(this).siblings('.submenu').toggleClass('open');
+                        });
+
+                    
+
+                        });
     
             </script>
             

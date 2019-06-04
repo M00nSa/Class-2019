@@ -12,7 +12,6 @@ body {
 .mainimg img {
     margin: auto;
     display: block;
-    max-width: 100%;
 }
 
 #H1 {
@@ -55,6 +54,8 @@ body {
     text-decoration: none;
 }
 
+
+
 .Firstpageopt .HColor:hover {
   background-color: #ee79a2;
 }
@@ -63,22 +64,17 @@ body {
   background-color: #ee79a2;
 }
 
-
-
-.Eventpic img {
-  width: 48%;
-  float: left;
-  padding-top: 74px;
-}
-
 .Eventtext,
 .AboutP,
 .SecP,
 .AboutDonation {
-  padding: 5px;
-    letter-spacing: .8px;
-    line-height: 37px;
-    font-size: 16px;
+  
+  letter-spacing: 0.7px;
+  line-height: 30px;
+}
+
+.Eventtext{
+  padding: 0px 5px;
 }
 
 .Eventtext {
@@ -93,8 +89,8 @@ h2 {
 }
 
 .Firstpageopt {
-  height: 144px;
-  margin: 50px auto;
+  height: 168px;
+  margin: 82px auto;
   width: 350px;
 }
 
@@ -104,6 +100,7 @@ h2 {
 
 .Firstpageopt li a {
   text-decoration: none;
+  color: black;
 }
 
 #Donate {
@@ -122,7 +119,7 @@ h2 {
 
 h1 {
   border-bottom: 1px solid #c23062;
-    padding: 40px 15px 40px;
+  padding: 10px 15px 40px;
     color: #E91E63;
     text-align: center;
     font-size: 28px;
@@ -187,9 +184,6 @@ p a {
   color: #742282;
 }
 
-.Eventtext p::first-letter {
-  font-size: 36px;
-}
 
 #EventsBtn {
   border-top: 1px solid #c23062;
@@ -204,7 +198,8 @@ p a {
 .AboutP button,
 .AboutDonation button,
 .padding button,
-.Direction button {
+.Direction button,
+#ReadingclubBtn {
 background-color: #c23062;
     padding: 20px;
     border-radius: 5px;
@@ -214,9 +209,13 @@ background-color: #c23062;
     font-family: serif;
 }
 
+.EventsBtn button {
+  font-size: 19px;
+}
+
 .SecP button,
 .AboutP button{
-  padding: 8px;
+  padding: 12px;
   font-size: 18px;
 }
 
@@ -240,6 +239,10 @@ background-color: #c23062;
   text-align: center;
 }
 
+.maincontainer .Mainpart {
+  text-align: left;
+}
+
 
 
 .clearfix {
@@ -257,28 +260,51 @@ background-color: #c23062;
 }
 
 
-#Color1 {
+#Solid1{
   background-color: #1d35e1e8;
 }
 
-#Color2 {
+#Solid2 {
   background-color:#581085;
 }
 
-
-#Color3 {
+#Solid3 {
   background-color:#c23062;
 }
 
-#Color4 {
+#Solid4 {
   background-color:#581085;
   
 }
 
-#Color5 {
+#Solid5 {
   background-color:#00a1ffc7;
   
 }
+
+#Solid1 h3,
+#Solid2 h3,
+#Solid3 h3,
+#Solid4 h3,
+#Solid5 h3 {
+  color: white;
+}
+#Solid1:hover,
+#Solid2:hover,
+#Solid3:hover,
+#Solid4:hover,
+#Solid5:hover {
+  background: rgba(0, 90, 193, 0.7);
+  transition: all ease 0.5s;
+}
+
+
+
+
+
+
+
+
 
 .ImgContainer {
   margin-top: 84px;
@@ -301,15 +327,37 @@ section {
   left: 0px;
   width: 100%;
   height: 100%;
- 
+  color: transparent;
 
 }
 
-.Hcolor:hover,
-.Overlay:hover p{
+
+.Overlay:hover {
   background: rgba(0, 90, 193, 0.7);
-  color: rgba(0, 0, 0, 1);
+  transition: all ease 0.5s;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 21px;
 }
+
+.floater-sec section h3 {
+    color: transparent;
+}
+
+.floater-sec .Overlay h3{
+  margin: 0px;
+  padding: 96px 46px 106px 60px;
+  color: transparent;
+}
+
+.floater-sec .Overlay h3:hover {
+ color: white;
+}
+
+#Solid h3 {
+color: white;
+}
+
 
 /* To have the images in image gallery zoom in without using jquery
 .Hcolor:hover section {
@@ -323,13 +371,10 @@ section {
 }
 
 .ImgContainer h3{
-  position: absolute;
-  left: 83px;
-  top: 0p;
-  top: 22px;
   color: white;
   letter-spacing: 1px;
   font-size: 21px;
+  text-align: center;
 }
 
 .Header h1 {
@@ -337,27 +382,25 @@ section {
   border-bottom: 1px solid #E91E63;
 }
 
-main h2 {
-  text-align: center;
-  margin: 0px;
-  padding-bottom: 10px;
+.Eventtext p {
+  padding: 0px 10px;
+    margin: 0px;
 }
 
 .AboutP p::first-letter,
-.Quote p::first-letter  {
-  font-size: 36px;
+.Quote p::first-letter,
+.SecP P::first-letter,
+.Eventtext p::first-letter,
+.Connectp p::first-letter  {
+  font-size: 28px;
   font-family: serif;
 }
 
 .AboutP,
 .AboutDonation  {
-  padding: 30px;
+  padding: 30px 0px;
 }
 
-iframe {
-  margin: auto;
-  display: block;
-}
 
 .Quote {
   margin: 30px auto 0px;
@@ -405,7 +448,7 @@ iframe {
 }
 
 .Storyleft {
-  margin-top: 141px;
+  margin-top: 42px;
 }
 
 .content3 {
@@ -414,17 +457,14 @@ iframe {
 
 .AboutP h3,
 .AboutDonation h3 {
-  font-size: 23px;
+  font-size: 24px;
   color: #1226b3e8;
 }
 
 h1{
-  font-size: 34px;
+  font-size: 30px;
 }
 
-h2{
-  font-size: 18px;
-}
 
 .SupportH1 h1{
     line-height: 56px;
@@ -453,18 +493,17 @@ h2{
   margin-top: 13px;
   font-size: 18px;
   display: block;
-  margin: 20px auto;
+  margin: 20px 0px;
 }
 
 .Formcontainer {
   width: 390px;
-  margin: auto;
-  top: 200px;
+  padding: 0px 0px 0px 20px;
 }
 
 .form-input {
   display: block;
-  width: 390px;
+  width: 360px;
   padding: 10px 0px;
   border: 1px solid #e1e1e1;
   background-color: #f8f8f8;
@@ -517,7 +556,7 @@ margin: 30px 0px;
 }
 
 #SubmitDonation button {
-  width: 390px;
+  width: 360px;
   margin-bottom: 20px;
 }
 
@@ -646,17 +685,19 @@ margin: 30px 0px;
   height: 248px;
   background-image: url(../Pictures/history.jpg);
   background-size: cover;
-  background-position: 16px 0px;
+  position: relative;
 }
 .header1 h1 {
-  background-color: rgba(125, 125, 125, 0.7);
+  background-color: rgba(0, 90, 193, 0.7);
   margin: 0px;
-  padding: 71px 66px 0px;
+  padding: 15px 19px;
     color: #ffffff;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 20px;
     font-family: sans-serif;
     line-height: 33px;
+    position: absolute;
+    top: 52px;
 }
 
 .overlay {
@@ -667,7 +708,8 @@ margin: 30px 0px;
 }
 
 #SupportP p {
-  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 35px;
 }
 
 #SupportP h2 {
@@ -681,7 +723,7 @@ margin: 30px 0px;
 
 .AboutP button {
   display: block;
-    margin-top: 20px;
+  margin: 20px 0px;
 }
 
 .Blogdiv img {
@@ -691,7 +733,7 @@ margin: 30px 0px;
 
 .Blogdiv .img-container {
   float: left;
-    padding-right: 30px;
+  padding-right: 30px;
 }
 
 .Blogdiv .AboutP {
@@ -705,6 +747,7 @@ margin: 30px 0px;
   display: inline;
   margin: 0px;
   font-size: 20px;
+  letter-spacing: 2px;
 }
 
 
@@ -827,12 +870,6 @@ text-decoration: none;
   margin-bottom: 20px;
  }
 
- .Direction button {
-  width: 95px;
-  padding: 8px;
-  font-size: 18px;
-  margin: 20px;
- }
 
  .Pageoneh1 h1 {
    border: none;
@@ -843,9 +880,7 @@ text-decoration: none;
    font-family: serif;
  }
 
- .tel p {
-  padding: 0px 149px;
-}
+ 
 .tel {
   margin: 66px 0px;
 }
@@ -871,12 +906,12 @@ text-decoration: none;
   position: relative;
  }
 #myP {
-  border: 7px dotted #5dca62;
+  
     border-radius: 5px;
     padding: 20px;
-    width: 212px;
     text-align: center;
-    float: right;
+    background-color: #76e876;
+    
   }
 
   .FirstWord {
@@ -891,3 +926,316 @@ text-decoration: none;
   .padding #myP {
   width: 190px;
   }
+
+
+
+  #slider {
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+    opacity:0;
+}
+
+.Connectdiv {
+  height: 332px;
+}
+
+.Direction button {
+  margin: 18px 0px;
+}
+
+.Blogdiv {
+  float: left;
+}
+
+.ArchiveContainer {
+  display: inline;
+}
+
+.Eventpic {
+  float: left;
+}
+
+.Eventpic img {
+  width: 186px;
+  padding: 7px 0px 25px;
+  display: block;
+}
+
+.mainimg {
+  margin-top: 130px;
+}
+
+/* New nav */
+
+header {
+  background-image: linear-gradient(to right, #101385 , #c23062);
+  position: fixed;
+  top: 0px;
+    z-index: 100;
+}
+
+.nav-controller {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 130px;
+  width: 404px;
+}
+.submenu-toggle {
+  color: black;
+}
+
+
+
+.logo {
+  width: 100px;
+  padding: 14px 10px;
+}
+
+.nav-toggle {
+  padding: 10px 20px;
+  
+}
+
+nav,
+.submenu {
+  display: none;
+}
+
+.open {
+  display: block;
+  width: 200px;
+  background: #ebebeb;
+  float: right;
+  padding: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+ul li {
+  padding: 10px 0px;
+  list-style: none;
+  margin-left: 35px;
+}
+
+.Hover a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.Hover a:hover,
+.submenu-toggle:hover,
+.submenu li a:hover {
+  color: #21c1dd;
+}
+
+.submenu ul:hover {
+  border-bottom: 1px solid #21c1dd;
+}
+
+
+.nav-toggle {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+
+
+.hamburgerIcon {
+  height: 4px;
+  width: 32px;
+  position: absolute;
+  top: 13%;
+  right: 10%;
+  background-color: white;
+  transform: translate(-50%,-50%) rotate(0deg);
+  border-radius: 5px;
+}
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+      content: "";
+      position: absolute;
+      height: inherit;
+      border-radius:inherit;
+      background-color: inherit;
+      margin: auto;
+      width: 50%;
+  }
+.hamburgerIcon::before {
+  top:-8px;
+  left: 0px;
+  transform-origin: left;
+  border-radius: 5px;
+}
+
+
+.hamburgerIcon::after {
+  bottom:-8px;
+  right: 0px;
+  transform-origin: right;
+  border-radius: 5px;
+}
+
+/* end of nav */
+
+.Eventtext span {
+  display: none;
+}
+
+.Header2  {
+  text-align: center;
+}
+
+.Story p {
+  line-height: 34px;
+}
+
+.background {
+  margin-top: 129px;
+}
+
+.content3 ul {
+  flex-direction: column;
+}
+.Eventtext h2 {
+  margin: 0px;
+  padding: 0px 0px 20px 10px;
+}
+
+#ReadingclubBtn {
+  font-size: 13px;
+  padding: 7px;
+  
+}
+
+.SupportP {
+  padding: 30px 20px;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+.SupportP h2 {
+  color: #E91E63;
+}
+
+#DonationBtn button {
+    padding: 17px;
+    font-size: 23px;
+}
+
+#DonationBtn span {
+  font-weight: bold;
+}
+
+.AboutBlog h2 {
+  text-align: center;
+}
+.AboutBlog li {
+  margin: 0px;
+}
+
+
+.AboutBlog{
+  width: 179px;
+}
+
+.Blog button {
+  margin: 20px 0px 47px;
+}
+
+#blog {
+  margin: auto;
+}
+.Header2 h2 {
+  border-bottom: 1px solid #1226b3e8;
+  padding: 26px;
+}
+
+
+
+.Connectp p {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#address{
+  line-height: 19px;
+    margin-top: 20px;
+}
+
+.custom-width .img-container img {
+  width: 100%;
+}
+
+.custom-width  {
+  display: none;
+}
+
+
+.tel {
+  padding: 0px 20px;
+  margin: 10px 0px 15px;
+}
+
+.form .form-input {
+  width: 362px;
+}
+
+
+
+.BTN #SubmitDonation button {
+  width: 93px;
+  padding: 7px;
+  font-size: 14px;
+  margin-bottom: 98px;
+}
+
+.Connectdiv {
+  padding: 0px 20px;
+}
+#SupportP {
+  margin-top: 130px;
+  padding: 30px 20px;
+}
+
+.RCiframe {
+  margin: auto;
+  width: 364px;
+  margin-bottom: 20px;
+}
+
+.RCiframe iframe {
+    width: 100%;
+   height: 250px;
+}
+
+.RCh2  h2 {
+  padding: 20px 0px;
+  margin-top: 0px;
+}
+
+#If2 {
+  width: 100%;
+  height: 200px;
+}
+
+.Direction {
+  width: 362px;
+  margin: auto;
+}

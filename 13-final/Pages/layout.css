@@ -22,6 +22,10 @@
     display: none;
 }
 
+.Eventtext #part2 {
+    display: none;
+  }
+
 
 /*************SMALL SCREENS********************/
 @media (min-width: 414px){
@@ -58,8 +62,8 @@
         background-position: 564px -33px;
     }
 
-    .Pageoneh1 h1 {
-        display: none;
+    .mainimg img {
+        width: 404px;
     }
    
 }
@@ -98,9 +102,7 @@
         display: block;
     }
 
-    .Firstpageopt {
-        display: none;
-    }
+    
 
 
 h1 {
@@ -138,7 +140,7 @@ footer {
 
 .Formcontainer,
 .form-input {
-    width: 397px;
+    width: 710px;
 }
 
 .FullName {
@@ -180,27 +182,21 @@ footer {
 font-size: 18px;
 }
 
-.SecP {
-    font-size: 22px;
-}
 .header1 h1 {
     line-height: 43px;
     padding: 113px 0px;
     font-size: 28px;
 }
 .overlay {
-   height: 316px;
+    height: 400px;
    width:  760px;
 }
 
 .background {
-    height: 316px;
-    background-position: 16px -13px;
+    height: 400px;
+    background-position: 0px -13px;
 }
 
-.Pageoneh1 h1 {
-    display: block;
-}
 .ImgContainer h3 {
     left: 47px;
 }
@@ -211,7 +207,7 @@ font-size: 18px;
 }
 
 .content img, .content2 img {
-    max-width: 100%;
+    width: 100%;
 }
 .Blogdiv .img-container {
     float: left;
@@ -219,17 +215,34 @@ font-size: 18px;
 }
 
 .Blogdiv .AboutP {
-    width: 220px;
+    width: 380px;
 }
 
 
-#Archive .content3 {
-    padding: 0px 20px 0px 0px;
+
+
+
+  .floater-sec .Overlay h3 {
+    padding: 103px 46px 75px 60px;
+  }
+  #Solid1 h3,
+  #Solid2 h3 {
+  padding: 103px 46px 99px 60px;
+}
+
+#Pic1 h3,
+#Solid3 h3,
+#Solid1 h3{
+    padding: 104px 17px 98px 17px;
+  }
+
+  #Pic2 h3,
+  #Pic3 h3 {
+    padding: 103px 46px 99px 60px;
   }
 
 
 
-  
 
 
  .tel p {
@@ -238,16 +251,14 @@ font-size: 18px;
 
 #If2 {
     width: 300px;
-    height: 225px;
+    height: 233px;
+   
 }
 
 .padding {
     padding: 0 0 0 20px;
 }
 
-.form-input {
-    width: 300px;
-} 
 
 .Hover {
     padding-right: 12px;
@@ -260,15 +271,231 @@ font-size: 18px;
     font-size: 17px;
 }
 
-main h2 {
-    margin: 30px 0px;
+.Story h2 {
+    padding: 6px 0px;
+    margin: 0px;
+}
+.Header2 h2 {
+    margin: 45px 0px 20px;
 }
 
 h2{
     font-size: 24px;
   }
 
+.Direction {
+    padding: 24px 0px 0px;
+    width: 302px;
+}
 
+.header1 h1 {
+    padding: 15px 55px;
+    top: 92px;
+}
+
+.Eventtext p {
+    font-size: 20px;
+    line-height: 41px;
+    padding: 0px 10px 0px 18px;
+}
+
+.Eventtext #part1 {
+    display: block;
+  }
+
+  .Story p,
+  .Aboutpage p {
+    line-height: 39px;
+    font-size: 19px;
+} 
+/* New nav */
+
+.nav-toggle{
+    display: none;
+}
+
+nav .open {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6px;
+}
+
+ul {
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+nav {
+display: block;
+}
+
+.open {
+    width: 162px;
+}
+
+.submenu {
+flex-direction: column;
+}
+
+
+/* end of nav */
+
+header {
+    width: 760px;
+    height: 180px;
+}
+
+.mainimg {
+    margin-top: 180px;
+}
+
+
+.Hover a:first-child,
+.submenu-toggle {
+    color: white;
+  }
+  
+  .submenu a:first-child {
+    color: black;
+  }
+
+  header nav ul li {
+      position: relative;
+  }
+
+  header nav ul li ul {
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    padding-top: 10px;
+    padding-left: 0;
+    background: #ddd;
+    width: 150px;
+  }
+  header nav ul li ul li {
+    display: block;
+    text-align: left !important;
+    left: 0;
+}
+
+header nav ul li ul li a {
+    display: block;
+    width: auto;
+    text-align: left !important;
+    font-size: 90%;
+}
+
+.Eventpic {
+    width: 47%;
+    padding-left: 20px;
+}
+
+.Eventpic img {
+    width: 100%;
+}
+
+.Firstpageopt .HColor{
+      font-size: 20px;
+      padding: 13px 18px;
+      margin: 16px 45px 38px;
+      border: 2px solid #c23062;
+  }
+
+  .Firstpageopt {
+    height: 234px;
+    width: 465px;
+  }
+
+  #Donate {
+    background-size: 22px;
+}
+
+.Pageoneh1 h1 {
+    font-size: 35px;
+}
+
+.background {
+    margin-top: 180px;
+  }
+
+#Blogsuperdiv {
+    margin-top: 93px;
+}
+
+.EventsBtn button {
+    font-size: 23px;
+}
+#ReadingclubBtn {
+    margin-top: 13px;
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+  .Eventtext h2 {
+    padding: 0px 0px 20px 18px;
+}
+
+#ReadingclubBtn {
+    font-size: 14px;
+    padding: 11px;
+    
+  }
+
+  .AboutP p::first-letter,
+.Quote p::first-letter,
+.SecP P::first-letter,
+.Eventtext p::first-letter  {
+  font-size: 32px;
+}
+
+.h1 {
+    padding: 46px 0px 0px;
+  }
+
+
+
+
+.Connectp {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .5px;
+}
+
+.Connectp h2 {
+    font-size: 28px;
+}
+
+.custom-width {
+    width: 44%;
+}
+
+.custom-width .img-container {
+    float: right;
+}
+
+.custom-width  {
+    display: block;
+  }
+
+  #SupportP {
+    margin-top: 181px;
+  }
+
+  .RCiframe {
+    width: 719px;
+    margin-bottom: 40px;
+}
+
+.RCiframe iframe {
+   height: 400px;
+}
+
+.form .form-input {
+    width: 100%;
+}
+.Direction {
+    margin: 0px;
+}
 }
 
 /*************LARGE SCREENS*******************/
@@ -318,7 +545,7 @@ footer {
 
 .form-input,
 .Formcontainer {
-    width: 522px;
+    width: 863px;
 }
 
 
@@ -335,13 +562,15 @@ footer {
     width: 403px;
 }
 
-.SecP h2 {
-    font-size: 32px;
-}
 
 .SecPartoP {
     display: block;
+    line-height: 39px;
+    font-size: 19px;
+    font-family: sans-serif;
   }
+
+ 
 
   
 
@@ -369,16 +598,91 @@ footer {
 
 
 .AboutBlog {
-    width: 250px;
+    width: 197px;
 }
 
 .header1 h1 {
-    padding: 173px 70px;
+    padding: 15px 125px;
+    top: 136px;
     font-size: 30px;
 }
 
 #SupportP p {
     font-size: 20px;
+}
+
+
+#Pic4 h3,
+#Solid4 h3,
+#Solid5 h3 {
+    padding: 103px 37px 99px 37px;
+  }
+
+  header {
+    width: 960px;
+}
+
+.Firstpageopt .HColor {
+    font-size: 23px;
+    padding: 15px 24px;
+    margin: 16px 50px 38px;
+}
+.Firstpageopt {
+    height: 266px;
+    width: 494px;
+}
+
+.EventsBtn button {
+    font-size: 26px;
+}
+
+.Eventtext h2 {
+    font-size: 28px;
+  }
+
+  .Eventtext #part2 {
+    display: block;
+  }
+
+  .Story p,
+.Aboutpage p,
+.SecPartoP {
+    line-height: 45px;
+    font-size: 22px;
+    letter-spacing: 1.1px;
+}
+
+#DonationBtn button {
+    font-size: 34px;
+}
+
+nav ul{
+    font-size: 21px;
+}
+
+.SupportP {
+    font-size: 20px;
+  }
+
+  .Blogdiv .Blog h2 {
+    font-size: 24px;
+    line-height: 37px;
+  }
+  .Blogdiv .AboutP h3 {
+    font-size: 20px;
+}
+
+.form .form-input {
+    width: 383px;
+}
+
+#If2 {
+    width: 380px;
+}
+
+.RCiframe {
+    width: 920px;
+    margin: 0px auto 40px;
 }
 
 }
