@@ -1036,17 +1036,6 @@ ul li {
 
 
 
-.Hover a:hover,
-.submenu-toggle:hover,
-.submenu li a:hover {
-  color: #21c1dd;
-}
-
-.submenu ul:hover {
-  border-bottom: 1px solid #21c1dd;
-}
-
-
 .nav-toggle {
   position: fixed;
   top: 0px;
@@ -1241,4 +1230,23 @@ ul li {
 }
 #DonationBtn button {
   margin: 20px auto;
+}
+
+footer {
+  background-color: #444;
+  height: 100px;
+  color: white;
+}
+
+footer a {
+  color: #E91E63;
+}
+
+footer p{
+  text-align: center;
+}
+
+footer p:first-child{
+  text-align: left;
+  padding: 20px;
 }
