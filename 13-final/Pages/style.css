@@ -910,7 +910,8 @@ text-decoration: none;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    background-color: #76e876;
+    background-color: #1608b7cf;
+    color: white;
     
   }
 
@@ -1249,4 +1250,15 @@ footer p{
 footer p:first-child{
   text-align: left;
   padding: 20px;
+}
+
+#hiddenMessage {
+  width: 360px;
+}
+
+.Blog button {
+  width: 100%;
+}
+.content2 .Blog {
+  width: 364px;
 }
